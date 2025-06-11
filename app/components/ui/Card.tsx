@@ -31,3 +31,4 @@ export const Card: React.FC<CardProps> = ({ children, className = '', delay = 0 
     </motion.div>
   );
 };
+

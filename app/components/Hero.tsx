@@ -64,11 +64,11 @@ const Hero = () => {
      <PortfolioGrid/>
      
     <motion.button
-        className=" flex h-10 w-10 items-center absolute bottom-0 justify-center rounded-full bg-white/90 backdrop-blur-sm "
+        className=" flex h-10 w-10 items-center absolute bottom-10 justify-center rounded-ful backdrop-blur-sm "
         animate={{ y: [0, -10, 0] }}
          transition={{ duration: 3, repeat: Infinity }}
       >
-        <ArrowDown className="h-4 w-4 text-black" />
+        <ArrowDown className="h-4 w-4 text-white text-lg" />
       </motion.button>
      </section>
   );
