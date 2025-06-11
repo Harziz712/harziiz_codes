@@ -27,7 +27,7 @@ export const TestimonialCard = ({
   <motion.div
     animate={animate}
     transition={{ duration: 3, repeat: Infinity }}
-    className={`bg-neutral-900 text-white p-6 rounded-xl shadow-lg w-[200px] h-[140px] text-sm flex flex-col border-2 border-gray-500 justify-center items-center text-center ${className}`}
+    className={`bg-gradient-to-br from-neutral-800 to-neutral-900 text-white p-6 rounded-xl shadow-lg w-[200px] h-[140px] text-sm flex flex-col border-2 border-gray-500 justify-center items-center text-center ${className}`}
   >
     <p>{text}</p>
     <p className="text-right mt-4 text-neutral-400">{author}</p>
