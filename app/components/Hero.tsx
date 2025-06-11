@@ -1,15 +1,14 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { ArrowUpRight } from 'lucide-react';
+import { ArrowDown, ArrowUpRight } from 'lucide-react';
 import { TestimonialCard, testimonials } from './ui/TestimonialCard';
 import PortfolioGrid from './ui/PortfolioGrid';
 
 const Hero = () => {
   return (
-    <>
-    <section className="relative min-h-screen flex items-center justify-center px-4 md:px-6 py-10 overflow-hidden">
-      <video
+    <section className="  lg:pt-52 relative min-h-screen flex flex-col items-center justify-center px-4 md:px-6 py-52 overflow-hidden border-b-2 border-b-neutral-600" >
+          <video
         autoPlay
         loop
         muted
@@ -19,6 +18,7 @@ const Hero = () => {
         <source src="/bgvideo.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
+    <section >
       <div className="absolute inset-0 bg-black/60 z-10" />
 
       <motion.div
@@ -62,7 +62,15 @@ const Hero = () => {
      
     </section>
      <PortfolioGrid/>
-     </>
+     
+    <motion.button
+        className=" flex h-10 w-10 items-center absolute bottom-0 justify-center rounded-full bg-white/90 backdrop-blur-sm "
+        animate={{ y: [0, -10, 0] }}
+         transition={{ duration: 3, repeat: Infinity }}
+      >
+        <ArrowDown className="h-4 w-4 text-black" />
+      </motion.button>
+     </section>
   );
 }
 
