@@ -13,7 +13,9 @@ const PortfolioGrid: React.FC<PortfolioGridProps> = ({ width = "100%", height = 
       style={{ width, height, minHeight: "100vh" }}
     >
       <div className="mx-auto max-w-7xl">
-        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+            {/* left content */}
+            <div className="grid grid-cols-1 gap-4 md:grid-rows-2">
           <Card className="md:col-span-2 lg:col-span-2 xl:col-span-2" delay={0.1}>
             <div className="relative h-80 md:h-120 p-3">
               <img
@@ -31,6 +33,9 @@ const PortfolioGrid: React.FC<PortfolioGridProps> = ({ width = "100%", height = 
               className="w-full h-full object-cover rounded-2xl opacity-60 "
             />
           </Card>
+        </div>
+        {/* right content */}
+            <div className="grid grid-cols-1 gap-4 md:grid-rows-2">
 
           <Card className="md:col-span-2 lg:col-span-2 xl:col-span-2 h-64 p-3" delay={0.4}>
             <img
@@ -47,6 +52,7 @@ const PortfolioGrid: React.FC<PortfolioGridProps> = ({ width = "100%", height = 
               className="w-full h-full object-cover rounded-2xl opacity-60 "
             />
           </Card>
+          </div>
         </div>
       </div>
     </div>

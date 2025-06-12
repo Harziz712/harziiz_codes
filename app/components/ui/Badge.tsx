@@ -17,7 +17,7 @@ export const Badge = ({ children, delay = 0 }: { children: React.ReactNode; dela
 export const StylishBadge = ({ children , className }: { children: React.ReactNode, className: string} )=> {
     return (
 
-               <motion.div
+        <motion.div
              animate={{ opacity: 1, scale: 1 }}
              transition={{ duration: 0.5, delay: 0.8 }}
              className={`flex items-center space-x-2 bg-black/30 backdrop-blur-sm rounded-full px-3 py-2  ${className}`}
@@ -25,7 +25,7 @@ export const StylishBadge = ({ children , className }: { children: React.ReactNo
            <div className="w-2 h-2 relative animate-ping bg-green-400  rounded-full"> </div>
            <div className="w-2 h-2 z-10 absolute animate-pulse  bg-green-400 rounded-full"></div>
              <span className="text-xs text-white"> {children}</span>
-               </motion.div>
+         </motion.div>
    
     )
 }

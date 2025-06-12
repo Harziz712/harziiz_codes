@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import { ArrowUpRight } from 'lucide-react';
 
 interface CardProps {
-  children: React.ReactNode;
+  children?: React.ReactNode;
   className?: string;
   delay?: number;
 }
@@ -32,3 +32,51 @@ export const Card: React.FC<CardProps> = ({ children, className = '', delay = 0 
   );
 };
 
+export const AnimateCard: React.FC<CardProps> = ({ children, className }) => {
+    return(
+        <motion.div     
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.3, duration: 0.6 }} 
+        className={`${className}`}
+        >
+
+        {children}
+
+      </motion.div>
+    )
+}
+
+interface ServiceProps {
+  title: string;        
+    description: string;
+    index?: number;
+}
+export  function ServicesDetails({ title, description, index }: ServiceProps) {
+  return (
+    <section className="  p-4">
+      <div className="w-full">
+          <motion.div
+            key={index}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: (index ?? 0) * 0.1 }}
+            className="  shadow-lg"
+          >
+            <h3 className="text-xl font-semibold mb-2 flex items-center gap-2">
+              <span>
+                {title.includes("UI/UX") && "🖥️"}
+                {title.includes("Development") && "📦"}
+                {title.includes("Framer") && "🎯"}
+                {title.includes("Website") && "🧩"}
+              </span>
+              {title}
+            </h3>
+            <p className="text-gray-300 mb-4 text-sm leading-relaxed">
+              {description}
+            </p>
+          </motion.div>
+      </div>
+    </section>
+  );
+}

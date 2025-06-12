@@ -1,3 +1,6 @@
+"use client"
+
+import DesignServices from "./components/DesignServices";
 import Hero from "./components/Hero";
 import HowItWorks from "./components/HowItWorks";
 import { Navbar } from "./components/Navbar";
@@ -11,6 +14,7 @@ export default function Home() {
         <Hero />
         <ProfileCard/>
         <HowItWorks/>
+        <DesignServices/>
         {/* Other sections go here */}
       </main>
     </>
