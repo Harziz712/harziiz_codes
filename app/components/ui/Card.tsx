@@ -54,14 +54,13 @@ interface ServiceProps {
 }
 export  function ServicesDetails({ title, description, index }: ServiceProps) {
   return (
-    <section className="  p-4">
+    <section className=" row-span-1 p-4">
       <div className="w-full">
           <motion.div
             key={index}
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: (index ?? 0) * 0.1 }}
-            className="  shadow-lg"
           >
             <h3 className="text-xl font-semibold mb-2 flex items-center gap-2">
               <span>

@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
-import { FaLaptopCode, FaPenNib, FaFigma, FaPaintBrush } from 'react-icons/fa';
 import { StylishBadge } from './ui/Badge';
 import { AnimateCard, ServicesDetails } from './ui/Card';
+import InfiniteCarousel, { CarouselBadgeGroup } from './ui/Carousels';
 
 
 const cardVariants = {
@@ -61,24 +61,24 @@ export default DesignServices;
       className=" relative overflow-hidden  group cursor-pointer z-20 bg-transparent p-4 md:p-8 "
     >
       <div className="mx-auto max-w-7xl ">
-        <div className="grid grid-cols-1 gap-4 md:grid-cols-2  md:max-h-[110vh]">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2  md:max-h-[110vh] sm:pb-20 md:pb-0">
             {/* left content */}
    <div className="grid grid-cols-1  md:grid-rows-2  md:max-h-[110vh]">
                     <div className="md:col-span-2 lg:col-span-2 xl:col-span-2 space-y-5" >
                         <AnimateCard
-                        className="relative h-80 md:h-120 p-3 rounded-2xl bg-gradient-to-br from-neutral-800 to-neutral-900">
+                        className="relative h-80 md:h-100 p-3 rounded-2xl bg-gradient-to-br from-neutral-800 to-neutral-900 grid grid-rows-3">
                             <ServicesDetails 
                             title="UI/UX Design" 
                             description= "Creating intuitive, user-friendly interfaces that enhance user experience and drive engagement, tailored to your brand's needs"  
                             index={1}/>
                                 <img
-                                src="/back1.png"
+                                src="/back2.png"
                                 alt="Dashboard Template"
-                                className="w-full h-full object-cover rounded-2xl opacity-60 "
+                                className="w-full h-full object-cover rounded-2xl opacity-60 row-span-2 "
                             />
                         </AnimateCard>
                     <AnimateCard
-                    className="md:col-span-2 lg:col-span-2 xl:col-span-2 h-64 p-3 rounded-2xl bg-gradient-to-br from-neutral-800 to-neutral-900" >
+                    className="md:col-span-2 lg:col-span-2 xl:col-span-2 h-40 p-3 rounded-2xl bg-gradient-to-br from-neutral-800 to-neutral-900" >
                         <ServicesDetails
                             title= "Web Development"
                             description="Building robust, scalable, and high-performance web applications that deliver exceptional user experiences and meet business goals"
@@ -92,30 +92,29 @@ export default DesignServices;
                     <div className="grid grid-cols-1 gap-4 md:grid-rows-2  md:max-h-[110vh] ">
                     <div className="md:col-span-2 lg:col-span-2 xl:col-span-2 space-y-5" >
                    < AnimateCard     
-                    className="md:col-span-2 lg:col-span-2 xl:col-span-2 h-64 p-3 rounded-2xl bg-gradient-to-br from-neutral-800 to-neutral-900" >
+                    className="md:col-span-2 lg:col-span-2 xl:col-span-2 h-40 p-3 rounded-2xl bg-gradient-to-br from-neutral-800 to-neutral-900" >
                         <ServicesDetails 
                         title = "Website Design"
                          description = "Designing breathtaking, user-centric websites that boost engagement, conversions, and growth, perfectly aligned with your brand"
                          index = {3}
                         />
                     </AnimateCard>
-                        <AnimateCard
-                        className="relative h-80 md:h-120 p-3 rounded-2xl bg-gradient-to-br from-neutral-800 to-neutral-900">
-                            <ServicesDetails
-                            title = "Framer Design"
-                            description = "Bringing ideas to life with interactive, user-centered Framer designs that simplify complexity and elevate user experience"
-                            index = {4}
-                            />
-                                <img
-                                src="/back1.png"
-                                alt="Dashboard Template"
-                                className="w-full h-full object-cover rounded-2xl opacity-60 "
-                            />
-                        </AnimateCard>
+                   <AnimateCard
+                    className="relative h-80 md:h-100 p-3 rounded-2xl bg-gradient-to-br from-neutral-800 to-neutral-900 grid grid-rows-3"
+                    >
+                    <ServicesDetails
+                        title="Framer Design"
+                        description="Bringing ideas to life with interactive, user-centered Framer designs that simplify complexity and elevate user experience"
+                        index={4}
+                    />
+                    
+                    <InfiniteCarousel />
+                    </AnimateCard>
                     </div>
                     </div>
           </div>
 
+        <CarouselBadgeGroup/>
       </div>
     </div>
   );

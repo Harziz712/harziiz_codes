@@ -14,6 +14,18 @@ export const Badge = ({ children, delay = 0 }: { children: React.ReactNode; dela
   </motion.span>
 )
 
+
+
+
+
+export const BadgeSlide = ({ children}: { children: React.ReactNode}) => (
+  <span
+    className="px-4 py-2 bg-neutral-800 border border-neutral-700 rounded-full text-xs text-neutral-300 hover:bg-neutral-700 transition-colors duration-300"
+  >
+    {children}
+  </span>
+)
+
 export const StylishBadge = ({ children , className }: { children: React.ReactNode, className: string} )=> {
     return (
 
