@@ -63,7 +63,7 @@ export default DesignServices;
       <div className="mx-auto max-w-7xl ">
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2  md:max-h-[110vh] sm:pb-20 md:pb-0">
             {/* left content */}
-   <div className="grid grid-cols-1  md:grid-rows-2  md:max-h-[110vh]">
+   <div className="grid grid-cols-1  md:grid-rows-2  md:max-h-[90vh]">
                     <div className="md:col-span-2 lg:col-span-2 xl:col-span-2 space-y-5" >
                         <AnimateCard
                         className="relative h-80 md:h-100 p-3 rounded-2xl bg-gradient-to-br from-neutral-800 to-neutral-900 grid grid-rows-3">
@@ -89,7 +89,7 @@ export default DesignServices;
                     </div>
             {/* right content */}
 
-                    <div className="grid grid-cols-1 gap-4 md:grid-rows-2  md:max-h-[110vh] ">
+                    <div className="grid grid-cols-1 gap-4 md:grid-rows-2  md:max-h-[90vh] ">
                     <div className="md:col-span-2 lg:col-span-2 xl:col-span-2 space-y-5" >
                    < AnimateCard     
                     className="md:col-span-2 lg:col-span-2 xl:col-span-2 h-40 p-3 rounded-2xl bg-gradient-to-br from-neutral-800 to-neutral-900" >

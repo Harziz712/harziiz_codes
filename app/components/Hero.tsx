@@ -1,9 +1,11 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { ArrowDown, ArrowUpRight } from 'lucide-react';
+import { ArrowDown } from 'lucide-react';
 import { TestimonialCard, testimonials } from './ui/TestimonialCard';
 import PortfolioGrid from './ui/PortfolioGrid';
+import { Arrow} from './ui/Badge'
+
 
 const Hero = () => {
   return (
@@ -36,9 +38,9 @@ const Hero = () => {
             <span className="w-2 h-2 rounded-full bg-white animate-ping" /> Web Developer & Designer
           </span>
 
-          <h1 className="text-4xl sm:text-5xl font-semibold leading-tight">
+          <h1 className="text-4xl sm:text-5xl font-semibold leading-tight flex items-center ">
             Akanbi <span className="text-neutral-400">AbdulAzeez</span>{' '}
-            <ArrowUpRight className="inline-block w-5 h-5 ml-1" />
+          <Arrow/>
           </h1>
 
           <p className="text-neutral-300 text-base sm:text-md">

@@ -1,6 +1,8 @@
 
 import React from 'react'
 import { motion } from 'framer-motion'
+import {  ArrowUpRight } from 'lucide-react';
+
 
 
 export const Badge = ({ children, delay = 0 }: { children: React.ReactNode; delay?: number }) => (
@@ -41,3 +43,18 @@ export const StylishBadge = ({ children , className }: { children: React.ReactNo
    
     )
 }
+
+
+
+export const Arrow = () => {
+  return (
+           <motion.button
+        className=" bottom-4 left-4 flex h-10 w-10 items-center border-t border-t-neutral-600 justify-center rounded-full ml-5 bg-gradient-to-br from-neutral-800 to-neutral-900 animate-bounce backdrop-blur-sm "
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.95 }}
+      >
+        <ArrowUpRight className="h-4 w-4 text-white/90" />
+      </motion.button>
+  )
+}
+
