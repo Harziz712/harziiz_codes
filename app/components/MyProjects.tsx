@@ -2,11 +2,11 @@ import React from 'react'
 import { motion } from 'framer-motion';
 import { StylishBadge } from './ui/Badge';
 import { Arrow} from './ui/Badge'
-import PortfolioGrid from './ui/PortfolioGrid';
+import {PortfolioGrid} from './ui/PortfolioGrid';
 
 const MyProjects = () => {
   return (
-    <section className="bg-black text-white px-4 py-16 md:px-8 lg:px-20 border-b-2 pb-24 border-b-neutral-600">
+    <section className="bg-black text-white px-4 py-16 md:px-8 lg:px-20 border-b-2 pb-24 border-b-neutral-600 ">
       <div className="text-center mb-12">
         <motion.div
           initial={{ opacity: 0, y: 10 }}
@@ -23,15 +23,15 @@ const MyProjects = () => {
             <span className="text-gray-400"> Services</span>
             <Arrow/>
           </h2>
-          <p className="text-gray-400 mt-2 text-md">
-          Showcase of my recent Sleek Works: websites , web applications mobile applications and many more
+          <p className="text-gray-400 mt-2 sm:text-xs text-md">
+          Showcase of my recent Sleek Works: websites , web applications <br/>mobile applications and many more
           </p>
           </div>
-                 <div className="flex flex-col sm:flex-row gap-4">
-            <button className="px-6 py-3 lg:text-md rounded-full bg-white text-black font-medium hover:bg-neutral-200 transition">
+                 <div className="flex flex-col sm:grid  gap-4">
+            <button className="px-6 py-3 sm:text-xs md:text-md rounded-full bg-white text-black font-medium hover:bg-neutral-200 transition">
               See All Projects
             </button>
-            <button className="px-6 py-3 lg:text-md rounded-full bg-neutral-800 text-white font-medium hover:bg-neutral-700 transition">
+            <button className="px-6 py-3 sm:text-xs md:text-md rounded-full bg-neutral-800 text-white font-medium hover:bg-neutral-700 transition">
               Contact Now
             </button>
           </div>

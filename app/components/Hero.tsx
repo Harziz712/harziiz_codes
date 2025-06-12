@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 import { ArrowDown } from 'lucide-react';
 import { TestimonialCard, testimonials } from './ui/TestimonialCard';
-import PortfolioGrid from './ui/PortfolioGrid';
+import {PortfolioGrid} from './ui/PortfolioGrid';
 import { Arrow} from './ui/Badge'
 
 

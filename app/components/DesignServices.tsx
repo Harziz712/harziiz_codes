@@ -34,13 +34,13 @@ const DesignServices = () => {
             <span className="text-white">Design </span>
             <span className="text-gray-400">Services</span>
           </h2>
-          <p className="text-gray-400 mt-2 text-md">
+          <p className="text-gray-400 mt-2 sm:text-xs md:text-md">
           Explore a suite of design services to elevate your brand and<br/> user experience from stunning websites to productive Mobile App Development
           </p>
           </div>
-                <button className="bg-white text-black px-3 py-1.5 rounded-full text-md font-medium">
-        Contact Now
-        </button>
+             <button className="px-6 py-3 sm:text-xs md:text-md rounded-full bg-neutral-800 text-white font-medium hover:bg-neutral-700 transition">
+              Contact Now
+            </button>
         </div>
         </motion.div>
       </div>
