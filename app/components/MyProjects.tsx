@@ -16,8 +16,8 @@ const MyProjects = () => {
               <div className={`flex items-center justify-center my-5 object-cover `}>
        <StylishBadge className='border border-gray-700 '>My Projects</StylishBadge>
        </div>
-       <div className='flex justify-between px-10 items-center'>
-       <div className='items-left justify-end text-left '>
+       <div className='grid grid-cols-4 justify-between px-10 items-center'>
+       <div className='items-left justify-end text-left col-span-3 '>
           <h2 className="text-4xl font-bold flex items-center ">
             <span className="text-white mr-2">Design </span>
             <span className="text-gray-400"> Services</span>
@@ -27,7 +27,7 @@ const MyProjects = () => {
           Showcase of my recent Sleek Works: websites , web applications <br/>mobile applications and many more
           </p>
           </div>
-                 <div className="flex flex-col sm:grid  gap-4">
+            <div className="grid md:grid-cols-2 grid-cols-1 w-full col-span-1 gap-4">
             <button className="px-6 py-3 sm:text-xs md:text-md rounded-full bg-white text-black font-medium hover:bg-neutral-200 transition">
               See All Projects
             </button>

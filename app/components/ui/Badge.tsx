@@ -2,6 +2,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import {  ArrowUpRight } from 'lucide-react';
+import { Check as CheckIcon, X as XIcon } from 'lucide-react';
 
 
 
@@ -54,6 +55,31 @@ export const Arrow = () => {
         whileTap={{ scale: 0.95 }}
       >
         <ArrowUpRight className="h-4 w-4 text-white/90" />
+      </motion.button>
+  )
+}
+
+
+export const Check = () => {
+  return (
+           <motion.button
+        className=" bottom-4 left-4 flex h-10 w-10 items-center border-t border-t-neutral-600 justify-center rounded-full bg-gradient-to-br from-neutral-800 to-neutral-900  backdrop-blur-sm "
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.95 }}
+      >
+        <CheckIcon className="h-4 w-4 text-white/90" />
+      </motion.button>
+  )
+}
+
+export const X = () => {
+  return (
+           <motion.button
+        className=" bottom-4 left-4 flex h-10 w-10 items-center border-t border-t-neutral-600 justify-center rounded-full bg-gradient-to-br from-neutral-800 to-neutral-900  backdrop-blur-sm "
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.95 }}
+      >
+        <XIcon className="h-4 w-4 text-white/90" />
       </motion.button>
   )
 }

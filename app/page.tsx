@@ -6,6 +6,7 @@ import HowItWorks from "./components/HowItWorks";
 import { Navbar } from "./components/Navbar";
 import ProfileCard from "./components/ProfileCard";
 import MyProjects from "./components/MyProjects";
+import WhyChooseMe from "./components/WhyChooseMe";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <HowItWorks/>
         <DesignServices/>
         <MyProjects/>
+        <WhyChooseMe />
         {/* Other sections go here */}
       </main>
     </>
