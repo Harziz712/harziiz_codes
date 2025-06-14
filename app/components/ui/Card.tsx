@@ -79,3 +79,4 @@ export  function ServicesDetails({ title, description, index }: ServiceProps) {
     </section>
   );
 }
+
