@@ -11,12 +11,12 @@ type ServiceItem = {
 const services: ServiceItem[] = [
   {
     title: 'Web Development',
-    price: 'Starting from $1,999',
+    price: 'Code & No Code',
     description: 'Creating responsive, high-performance websites that engage users and drive results.',
   },
   {
     title: 'Mobile App Development',
-    price: 'Starting from $4,999',
+    price: 'Android & iOS',
     description:
       'Building visually stunning, user-focused mobile applications that drive engagement and growth.',
   },
