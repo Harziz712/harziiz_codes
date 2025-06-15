@@ -48,7 +48,7 @@ export default function TestimonialCard({
         ))}
       </div>
 
-      <p className="text-sm text-gray-300">{message}</p>
+      <p className="text-sm text-gray-300 text-left">{message}</p>
     </motion.div>
   );
 }
