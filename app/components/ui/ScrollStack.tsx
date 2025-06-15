@@ -23,7 +23,7 @@ const ScrollStack = () => {
           </motion.div>
 
     <motion.div
-      className="md:mt-12  mt-24 rounded-2xl  w-full    p-4  items-center justify-center gap-3"
+      className="md:mt-12  mt-20 rounded-2xl  w-full    p-4  items-center justify-center gap-3"
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.6, duration: 0.6}}>
@@ -35,7 +35,7 @@ const ScrollStack = () => {
             />
     </motion.div>
      <motion.div
-      className="md:mt-12  mt-30 rounded-2xl  w-full    p-4  items-center justify-center gap-3"
+      className="md:mt-12  mt-24 rounded-2xl  w-full    p-4  items-center justify-center gap-3"
       initial={{ opacity: 0, y: 60 }}
       whileInView={{ opacity: 1, y: 40 }}
       transition={{ delay: 0.9, duration: 0.6 }}>
@@ -47,7 +47,7 @@ const ScrollStack = () => {
           />
     </motion.div>
        <motion.div
-      className="md:mt-12  mt-30 rounded-2xl  w-full    p-4  items-center justify-center gap-3"
+      className="md:mt-12  mt-28 rounded-2xl  w-full    p-4  items-center justify-center gap-3"
       initial={{ opacity: 0, y: 100}}
       whileInView={{ opacity: 1, y: 80 }}
       transition={{ delay: 1.2, duration: 0.6 }}>
