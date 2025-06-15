@@ -11,9 +11,9 @@ export const Navbar = () => {
   return (
     <>
       <header className="fixed top-6 left-1/2 transform -translate-x-1/2 z-50 w-[95%] max-w-4xl px-6 py-3 rounded-full bg-black/70 backdrop-blur-md border-2 border-gray-800 flex justify-between items-center overflow-none">
-        <span className="text-white font-semibold text-2xl flex items-center gap-2">
+        <a href="#home" className="text-white font-semibold text-2xl flex items-center gap-2">
           Harziiz
-        </span>
+        </a>
 
         <nav className="hidden md:flex  items-center gap-6">
           <NavLink href="#services">Services</NavLink>

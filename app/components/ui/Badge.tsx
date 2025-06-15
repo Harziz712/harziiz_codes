@@ -48,14 +48,16 @@ export const StylishBadge = ({ children , className }: { children: React.ReactNo
 
 
 export const Arrow = () => {
-  return (
-           <motion.button
-        className=" bottom-4 left-4 flex h-10 w-10 items-center border-t border-t-neutral-600 justify-center rounded-full ml-5 bg-gradient-to-br from-neutral-800 to-neutral-900 animate-bounce backdrop-blur-sm "
-        whileHover={{ scale: 1.1 }}
-        whileTap={{ scale: 0.95 }}
-      >
-        <ArrowUpRight className="h-4 w-4 text-white/90" />
-      </motion.button>
+  return(
+    <motion.button
+      className="bottom-4 left-4 flex h-10 w-10 items-center md:border-t border-t-neutral-600 justify-center rounded-full ml-5 md:bg-gradient-to-br from-neutral-800 to-neutral-900 animate-bounce md:backdrop-blur-sm
+        sm:h-10 sm:w-10 sm:ml-5
+      "
+      whileHover={{ scale: 1.1 }}
+      whileTap={{ scale: 0.95 }}
+    >
+      <ArrowUpRight className="h-4 w-4 text-white/90 sm:h-4 sm:w-4" />
+    </motion.button>
   )
 }
 

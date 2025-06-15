@@ -18,7 +18,7 @@ const cardVariants = {
 
 const DesignServices = () => {
   return (
-  <section className="bg-black text-white px-4 py-16 md:px-8 lg:px-20 border-b-2 pb-24 border-b-neutral-600">
+  <section  id='services' className="bg-black text-white px-4 py-16 md:px-8 lg:px-20 border-b-2 pb-24 border-b-neutral-600">
       <div className="text-center mb-12">
         <motion.div
           initial={{ opacity: 0, y: 10 }}
@@ -28,7 +28,7 @@ const DesignServices = () => {
               <div className={`flex items-center justify-center my-5 object-cover `}>
        <StylishBadge className='border border-gray-700 '>Design Services</StylishBadge>
        </div>
-       <div className='flex justify-between px-10 items-center'>
+       <div className='md:flex space-y-10 md:space-y-0 justify-between md:px-10  px-2items-center'>
        <div className='items-left justify-end text-left'>
           <h2 className="text-4xl font-bold">
             <span className="text-white">Design </span>
@@ -60,13 +60,13 @@ export default DesignServices;
   <div
       className=" relative overflow-hidden  group cursor-pointer z-20 bg-transparent p-4 md:p-8 "
     >
-      <div className="mx-auto max-w-7xl ">
+      <div className="mx-auto max-w-7xl space-y-20 md:space-y-0 ">
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2  md:max-h-[110vh] sm:pb-20 md:pb-0">
             {/* left content */}
    <div className="grid grid-cols-1  md:grid-rows-2  md:max-h-[90vh]">
                     <div className="md:col-span-2 lg:col-span-2 xl:col-span-2 space-y-5" >
                         <AnimateCard
-                        className="relative h-80 md:h-100 p-3 rounded-2xl bg-gradient-to-br from-neutral-800 to-neutral-900 grid grid-rows-3">
+                        className="relative h-110 gap-10 md:gap-0 md:h-100 p-3 rounded-2xl bg-gradient-to-br from-neutral-800 to-neutral-900 grid grid-rows-3">
                             <ServicesDetails 
                             title="UI/UX Design" 
                             description= "Creating intuitive, user-friendly interfaces that enhance user experience and drive engagement, tailored to your brand's needs"  
@@ -100,7 +100,7 @@ export default DesignServices;
                         />
                     </AnimateCard>
                    <AnimateCard
-                    className="relative h-80 md:h-100 p-3 rounded-2xl bg-gradient-to-br from-neutral-800 to-neutral-900 grid grid-rows-3"
+                    className="relative h-100 md:h-100 p-3 rounded-2xl bg-gradient-to-br from-neutral-800 to-neutral-900 grid grid-rows-3"
                     >
                     <ServicesDetails
                         title="Framer Design"

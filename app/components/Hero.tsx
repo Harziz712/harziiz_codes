@@ -5,11 +5,12 @@ import { ArrowDown } from 'lucide-react';
 import { TestimonialCard, testimonials } from './ui/TestimonialCard';
 import {PortfolioGrid} from './ui/PortfolioGrid';
 import { Arrow} from './ui/Badge'
+import CometOverlay from './ui/CometOverlay';
 
 
 const Hero = () => {
   return (
-    <section className="relative flex flex-col items-center justify-start px-4 md:px-6 pt-40 pb-20 min-h-[300vh] md:min-h-[140vh] lg:min-h-[200vh] overflow-hidden border-b-2 border-b-neutral-600">
+    <section id="home" className="relative flex flex-col items-center justify-start px-4 md:px-6 pt-40 pb-20 min-h-[100vh] md:min-h-[140vh] lg:min-h-[200vh] overflow-hidden border-b-2 border-b-neutral-600">
       {/* Background Video */}
       <video
         autoPlay
@@ -21,7 +22,7 @@ const Hero = () => {
         <source src="/bgvideo.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-
+      <CometOverlay />
       {/* Overlay */}
       <div className="absolute inset-0 bg-black/60 z-10" />
 
@@ -33,12 +34,12 @@ const Hero = () => {
         className="relative z-20 text-white w-full max-w-6xl grid grid-cols-1 lg:grid-cols-3 gap-8 md:gap-12"
       >
         {/* Left Content */}
-        <div className="flex flex-col gap-6 lg:col-span-2">
+        <div className="flex flex-col gap-4 md:gap-6  lg:col-span-2">
           <span className="inline-flex items-center gap-2 text-sm sm:text-md font-medium bg-neutral-900 border-2 border-gray-800 rounded-full px-4 py-2 w-fit">
             <span className="w-2 h-2 rounded-full bg-white animate-ping" /> Web Developer & Designer
           </span>
 
-          <h1 className="text-4xl sm:text-5xl font-semibold leading-tight flex items-center ">
+          <h1 className="text-4xl sm:text-4xl font-semibold leading-tight flex items-center ">
             Akanbi <span className="text-neutral-400 ml-4">AbdulAzeez</span>{' '}
           <Arrow/>
           </h1>

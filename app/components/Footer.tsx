@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { FaXTwitter, FaInstagram, FaFacebook, FaDribbble } from 'react-icons/fa6';
+import { FaXTwitter, FaInstagram, FaGithub, FaLinkedin } from 'react-icons/fa6';
 import { StylishBadge } from './ui/Badge';
 
 const Footer = () => {
@@ -33,8 +33,8 @@ const Footer = () => {
           <div className="flex gap-4 text-xl">
             <a href="#"><FaXTwitter /></a>
             <a href="#"><FaInstagram /></a>
-            <a href="#"><FaFacebook /></a>
-            <a href="#"><FaDribbble /></a>
+            <a href="#"><FaLinkedin /></a>
+            <a href="#"><FaGithub /></a>
           </div>
           <div className="flex gap-6 mt-4">
             <p>Made with 💻 by Harziiz</p>

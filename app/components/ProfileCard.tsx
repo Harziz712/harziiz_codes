@@ -2,7 +2,7 @@
 
 import React from 'react'
 import { motion } from 'framer-motion'
-import { Twitter, Instagram, Dribbble } from 'lucide-react'
+import { Twitter, Instagram, Github, Linkedin } from 'lucide-react'
 import { ExperienceItem } from './ui/ExperienceItem'
 import { SocialIcon } from './ui/SocialIcons'
 import { Badge, StylishBadge } from './ui/Badge'
@@ -57,7 +57,7 @@ const ProfileCard = () => {
             <motion.div
               variants={itemVariants}
               custom={0.4}
-              className="col-span-3 bg-neutral-900 p-4 rounded-2xl flex flex-col space-y-6"
+              className=" md:col-span-3 bg-neutral-900 p-4 rounded-2xl flex flex-col space-y-6"
             >
               {/* Profile Image */}
               <motion.div
@@ -108,7 +108,8 @@ const ProfileCard = () => {
                 <div className="flex space-x-3">
                   <SocialIcon icon={Twitter} href="#" delay={0.6} />
                   <SocialIcon icon={Instagram} href="#" delay={0.7} />
-                  <SocialIcon icon={Dribbble} href="#" delay={0.8} />
+                  <SocialIcon icon={Linkedin} href="#" delay={0.8} />
+                  <SocialIcon icon={Github} href="#" delay={0.8} />
                 </div>
 
                 {/* Button */}
@@ -130,7 +131,7 @@ const ProfileCard = () => {
             <motion.div
               variants={itemVariants}
               custom={0.5}
-              className="col-span-4 bg-neutral-900 p-6 rounded-2xl space-y-8"
+              className="md:col-span-4 bg-neutral-900 p-6 rounded-2xl space-y-8"
             >
               {/* Intro */}
               <motion.div

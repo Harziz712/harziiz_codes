@@ -31,8 +31,8 @@ const Faq = () => {
        </div>
        <div className='flex justify-between  items-center'>
        <div className='items-left justify-end text-left'>
-          <h2 className="md:text-5xl sm:text-2xl font-bold space-x-3">
-            <span className="text-white">Questions,</span>
+         <h2 className="text-4xl md:text-5xl font-bold flex items-center ">
+            <span className="text-white mr-2">Questions,</span>
             <span className="text-gray-400">Answers</span>
           </h2>
           <p className="text-gray-400 mt-2 sm:text-xs col-span-1 md:text-md lg:text-lg">

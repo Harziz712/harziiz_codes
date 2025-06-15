@@ -18,9 +18,9 @@ export default function ComparisonCards({
 }: CardProps) {
 
   return (
-    <motion.div  className="absolute left-0 w-full px-4">
-      <div className="bg-zinc-900 rounded-2xl border border-zinc-800 p-6 grid grid-cols-1 md:grid-cols-2 gap-4 shadow-lg">
-        <div className="p-4 border-l-0 pr-0">
+    <motion.div  className="absolute left-0 w-full md:px-4">
+      <div className="bg-zinc-900 rounded-2xl border border-zinc-800 p-6 grid grid-cols-2 md:grid-cols-2 gap-4 shadow-lg">
+        <div className="md:p-4 border-l-0 pr-0">
           <h3 className="text-sm md:text-lg font-semibold flex items-center gap-2">
             <Check />
             {leftTitle}
@@ -29,7 +29,7 @@ export default function ComparisonCards({
             {leftDescription}
           </p>
         </div>
-        <div className="p-4 border-l pl-8">
+        <div className="md:p-4 border-l pl-8 ">
           <h3 className="text-sm md:text-lg font-semibold flex items-center gap-2">
             <X />
             {rightTitle}

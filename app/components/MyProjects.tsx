@@ -6,7 +6,7 @@ import {PortfolioGrid} from './ui/PortfolioGrid';
 
 const MyProjects = () => {
   return (
-    <section className="bg-black text-white px-4 py-16 md:px-8 lg:px-20 border-b-2 pb-24 border-b-neutral-600 ">
+    <section id='projects' className="bg-black text-white px-4 py-16 md:px-8 lg:px-20 border-b-2 pb-24 border-b-neutral-600 ">
       <div className="text-center mb-12">
         <motion.div
           initial={{ opacity: 0, y: 10 }}
@@ -16,7 +16,7 @@ const MyProjects = () => {
               <div className={`flex items-center justify-center my-5 object-cover `}>
        <StylishBadge className='border border-gray-700 '>My Projects</StylishBadge>
        </div>
-       <div className='grid grid-cols-4 justify-between px-10 items-center'>
+       <div className='md:grid grid-cols-4 justify-between md:px-10 px-2 md:space-y-0 space-y-10 items-center'>
        <div className='items-left justify-end text-left col-span-3 '>
           <h2 className="text-4xl font-bold flex items-center ">
             <span className="text-white mr-2">Design </span>

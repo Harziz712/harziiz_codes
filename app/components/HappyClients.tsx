@@ -21,7 +21,7 @@ const cardVariants = {
 
 const HappyClients = () => {
   return (
-  <section className="bg-black text-white px-4 py-16 md:px-8 lg:px-20 border-b-2 pb-24 grid grid-cols-1 md:grid-cols-2 border-b-neutral-600">
+  <section id='testimonials' className="bg-black text-white px-4 py-16 md:px-8 lg:px-20 border-b-2 pb-24 grid grid-cols-1 md:grid-cols-2 border-b-neutral-600">
       <div className="text-center mb-12 h-fit sticky top-8">
         <motion.div
           initial={{ opacity: 0, y: 10 }}
@@ -34,8 +34,8 @@ const HappyClients = () => {
        </div>
        <div className='flex justify-between  items-center'>
        <div className='items-left justify-end text-left'>
-          <h2 className="md:text-5xl sm:text-2xl font-bold space-x-3">
-            <span className="text-white">Clients</span>
+          <h2 className="text-4xl md:text-5xl font-bold flex items-center ">
+            <span className="text-white mr-2">Clients</span>
             <span className="text-gray-400">Love Me</span>
           </h2>
           <p className="text-gray-400 mt-2 sm:text-xs col-span-1 md:text-md lg:text-lg">
