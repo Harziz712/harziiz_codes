@@ -10,6 +10,7 @@ import WhyChooseMe from "./components/WhyChooseMe";
 import HappyClients from "./components/HappyClients";
 import Faq from "./components/Faq";
 import LetsConnect from "./components/LetsConnect";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
         <HappyClients/>
         <Faq/>
         <LetsConnect/>
+        <Footer/>
         {/* Other sections go here */}
       </main>
     </>
