@@ -30,7 +30,7 @@ const Footer = () => {
 
         {/* Right Section */}
         <div className="flex flex-col items-start md:items-end gap-4 text-sm text-gray-400">
-          <div className=" gap-4 text-xl">
+          <div className=" flex gap-4 text-xl">
             <a href="https://x.com/harziizdevps"              ><FaXTwitter /></a>
             <a href="https://www.instagram.com/harzzie711/"   ><FaInstagram /></a>
             <a href="https://www.linkedin.com/in/akanbiazeez/"><FaLinkedin /></a>
