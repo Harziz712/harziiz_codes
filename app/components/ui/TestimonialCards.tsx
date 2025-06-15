@@ -10,7 +10,6 @@ interface TestimonialCardProps {
   message: string;
   imageUrl: string;
   rating: number;
-  delay: number;
 }
 
 export default function TestimonialCard({
@@ -19,15 +18,12 @@ export default function TestimonialCard({
   message,
   imageUrl,
   rating,
-  delay,
+  
 }: TestimonialCardProps) {
   return (
     <motion.div
-      className="bg-[#111] border border-zinc-800 text-white rounded-2xl p-6 w-full max-w-xl mx-auto shadow-lg"
-      initial={{ opacity: 0, y: 40 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ delay, duration: 0.6 }}
+      className="bg-[#111] border border-zinc-800 text-white rounded-2xl p-6 w-full max-w-xl  shadow-lg"
+
     >
       <div className="flex items-center gap-4">
         <img

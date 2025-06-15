@@ -8,6 +8,7 @@ import ProfileCard from "./components/ProfileCard";
 import MyProjects from "./components/MyProjects";
 import WhyChooseMe from "./components/WhyChooseMe";
 import HappyClients from "./components/HappyClients";
+import Faq from "./components/Faq";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
         <MyProjects/>
         <WhyChooseMe />
         <HappyClients/>
+        <Faq/>
         {/* Other sections go here */}
       </main>
     </>

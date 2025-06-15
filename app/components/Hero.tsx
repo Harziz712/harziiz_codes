@@ -39,7 +39,7 @@ const Hero = () => {
           </span>
 
           <h1 className="text-4xl sm:text-5xl font-semibold leading-tight flex items-center ">
-            Akanbi <span className="text-neutral-400">AbdulAzeez</span>{' '}
+            Akanbi <span className="text-neutral-400 ml-4">AbdulAzeez</span>{' '}
           <Arrow/>
           </h1>
 
