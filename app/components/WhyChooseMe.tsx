@@ -2,6 +2,7 @@ import { motion } from 'framer-motion'
 import React from 'react'
 import {  StylishBadge } from './ui/Badge'
 import ComparisonCards from './ui/ComparisonCards'
+import ScrollStack from './ui/ScrollStack'
 
 const WhyChooseMe = () => {
 
@@ -26,41 +27,7 @@ const WhyChooseMe = () => {
         </motion.div>
       </div>
 
- <div  className="relative h-[400vh] bg-black text-white overflow-hidden">
-      <div className="sticky top-0 h-screen flex items-center justify-center">
-        <div className="relative w-full max-w-4xl h-full">
-
-          <ComparisonCards
-            leftTitle="Skilled Professional"
-            leftDescription="Gain access to top-tier talent with years of experience, ensuring flawless execution."
-            rightTitle="Amateur Designer"
-            rightDescription="Lack of experience may result in design inconsistencies and overlooked details."
-          />
-
-          <ComparisonCards
-            leftTitle="Future-Ready Designs"
-            leftDescription="Crafting modern, scalable designs that grow with your business and stay ahead of trends."
-            rightTitle="Outdated Concepts"
-            rightDescription="Stale designs that don't reflect current trends or your evolving brand narrative."
-          />
-
-          <ComparisonCards
-            leftTitle="Client-Centric Collaboration"
-            leftDescription="Your vision leads the way — I work closely with you to bring ideas to life with precision and creativity."
-            rightTitle="Detached Communication"
-            rightDescription="Lack of collaboration and poor feedback loops can result in misaligned outcomes."
-          />
-
-          <ComparisonCards
-            leftTitle="Timely Project Tracking"
-            leftDescription="Stay informed with regular progress updates and timely deliverables."
-            rightTitle="Unstructured & Unreliable Work"
-            rightDescription="Inconsistent timelines and last-minute changes can compromise quality."
-          />
-
-        </div>
-      </div>
-    </div>
+ <ScrollStack/>
           </section>
   )
 }

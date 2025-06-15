@@ -7,6 +7,7 @@ import { Navbar } from "./components/Navbar";
 import ProfileCard from "./components/ProfileCard";
 import MyProjects from "./components/MyProjects";
 import WhyChooseMe from "./components/WhyChooseMe";
+import HappyClients from "./components/HappyClients";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         <DesignServices/>
         <MyProjects/>
         <WhyChooseMe />
+        <HappyClients/>
         {/* Other sections go here */}
       </main>
     </>
