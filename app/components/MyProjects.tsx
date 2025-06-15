@@ -18,9 +18,9 @@ const MyProjects = () => {
        </div>
        <div className='md:grid grid-cols-4 justify-between md:px-10 px-2 md:space-y-0 space-y-10 items-center'>
        <div className='items-left justify-end text-left col-span-3 '>
-          <h2 className="text-4xl font-bold flex items-center ">
-            <span className="text-white mr-2">Design </span>
-            <span className="text-gray-400"> Services</span>
+       <h2 className="text-4xl md:text-5xl font-bold flex items-center ">
+            <span className="text-white mr-2">Recent </span>
+            <span className="text-gray-400"> Projects</span>
             <Arrow/>
           </h2>
           <p className="text-gray-400 mt-2 sm:text-xs text-md">

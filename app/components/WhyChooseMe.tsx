@@ -17,8 +17,8 @@ const WhyChooseMe = () => {
               <div className={`flex items-center justify-center my-5 object-cover `}>
        <StylishBadge className='border border-gray-700 '>Why Choose me</StylishBadge>
        </div>
-          <h2 className="text-4xl ">
-            <span className="text-white">Why me as </span>
+           <h2 className="text-4xl md:text-5xl ">
+            <span className="text-white mr-2">Why me as </span>
             <span className="text-gray-400">Design Partner</span>
           </h2>
           <p className="text-gray-400 mt-2">

@@ -30,8 +30,8 @@ const DesignServices = () => {
        </div>
        <div className='md:flex space-y-10 md:space-y-0 justify-between md:px-10  px-2items-center'>
        <div className='items-left justify-end text-left'>
-          <h2 className="text-4xl font-bold">
-            <span className="text-white">Design </span>
+         <h2 className="text-4xl md:text-5xl font-bold flex items-center ">
+            <span className="text-white mr-2">Design </span>
             <span className="text-gray-400">Services</span>
           </h2>
           <p className="text-gray-400 mt-2 sm:text-xs md:text-md">
@@ -60,7 +60,7 @@ export default DesignServices;
   <div
       className=" relative overflow-hidden  group cursor-pointer z-20 bg-transparent p-4 md:p-8 "
     >
-      <div className="mx-auto max-w-7xl space-y-20 md:space-y-0 ">
+      <div className="mx-auto max-w-7xl space-y-20 md:space-y-10 ">
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2  md:max-h-[110vh] sm:pb-20 md:pb-0">
             {/* left content */}
    <div className="grid grid-cols-1  md:grid-rows-2  md:max-h-[90vh]">
