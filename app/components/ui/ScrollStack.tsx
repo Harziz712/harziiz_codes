@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion'
 import React from 'react'
-import {  StylishBadge } from './Badge'
 import  ComparisonCards  from './ComparisonCards'
 
 const ScrollStack = () => {
@@ -66,3 +65,5 @@ const ScrollStack = () => {
 }
 
 export default ScrollStack 
+
+
