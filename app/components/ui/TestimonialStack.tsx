@@ -12,8 +12,8 @@ const TestimonialCards = () => {
 
           <motion.div
             className="mt-12 w-full px-4 flex justify-center"
-            initial={{ opacity: 0, y: 10 }}
-            whileInView={{ opacity: 1, y: 20 }}
+            initial={{ opacity: 0, y: 10}}
+            whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.6 }}
           >
             <TestimonialCard
@@ -29,8 +29,8 @@ const TestimonialCards = () => {
           <motion.div
             className="mt-12 w-full px-4 flex justify-center"
             initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.6, duration: 0.6 }}
+            whileInView={{ opacity: 1, y: -250 }}
+            transition={{ delay: 1, duration: 1}}
           >
             <TestimonialCard
               name="Ada Lovelace"
@@ -45,7 +45,7 @@ const TestimonialCards = () => {
           <motion.div
             className="mt-12 w-full px-4 flex justify-center"
             initial={{ opacity: 0, y: 60 }}
-            whileInView={{ opacity: 1, y: 40 }}
+            whileInView={{ opacity: 1, y: -300 }}
             transition={{ delay: 0.9, duration: 0.6 }}
           >
             <TestimonialCard

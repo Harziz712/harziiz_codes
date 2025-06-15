@@ -30,7 +30,7 @@ export default function TestimonialCard({
       transition={{ delay, duration: 0.6 }}
     >
       <div className="flex items-center gap-4">
-        <Image
+        <img
           src={imageUrl}
           alt={name}
           width={60}
