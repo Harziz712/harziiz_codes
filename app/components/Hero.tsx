@@ -58,7 +58,7 @@ const Hero = () => {
         </div>
 
         {/* Testimonial Cards */}
-        <div className="relative flex flex-col gap-6 items-center lg:items-end justify-center">
+        <div className="relative flex flex-col md:pr-20 gap-6 items-center lg:items-end justify-center">
           <TestimonialCard animate={{ y: [0, -10, 0] }} {...testimonials[0]} className="rotate-[-6deg] -translate-x-0 lg:-translate-x-28" />
           <TestimonialCard animate={{ y: [0, 10, 0] }} {...testimonials[1]} className="rotate-[6deg] translate-x-0 lg:translate-x-20 lg:ml-12" />
         </div>
