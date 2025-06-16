@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 import "./globals.css";
-import CursorLens from "./components/ui/CursorTrack";
+import CursorTrail from "./components/ui/CursorTrack";
 
 
 export const metadata: Metadata = {
@@ -21,7 +21,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body className="font-geist antialiased">
-        <CursorLens />
+        <CursorTrail />
         {children}
         </body>
     </html>
