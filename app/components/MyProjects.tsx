@@ -28,12 +28,15 @@ const MyProjects = () => {
           </p>
           </div>
             <div className="grid md:grid-cols-2 grid-cols-1 w-full col-span-1 gap-4">
-            <button className="px-6 py-3 sm:text-xs md:text-md rounded-full bg-white text-black font-medium hover:bg-neutral-200 transition">
+            <a href='https://harziiz-me.vercel.app/projects'  className="px-6 py-3 sm:text-xs md:text-md rounded-full bg-white text-black font-medium hover:bg-neutral-200 transition">
               See All Projects
-            </button>
-            <button className="px-6 py-3 sm:text-xs md:text-md rounded-full bg-neutral-800 text-white font-medium hover:bg-neutral-700 transition">
+            </a>
+                 <a
+          href="https://wa.me/2348146447551"
+          target="_blank"
+          rel="noopener noreferrer" className="px-6 py-3 sm:text-xs md:text-md rounded-full bg-neutral-800 text-white font-medium hover:bg-neutral-700 transition">
               Contact Now
-            </button>
+            </a>
           </div>
         </div>
         </motion.div>

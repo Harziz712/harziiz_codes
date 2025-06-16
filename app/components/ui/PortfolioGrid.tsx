@@ -20,7 +20,7 @@ export const PortfolioGrid = () => {
 
         <Card className="row-span-1 h-64 p-3" delay={0.4}>
             <img
-              src="/back2.png"
+              src="/apple.png"
               alt="Landing Page Template"
               className="w-full h-full object-cover rounded-2xl opacity-60 "
             />
@@ -30,7 +30,7 @@ export const PortfolioGrid = () => {
         <div className="grid grid-cols-1 gap-4 md:grid-rows-3 ">
           <Card className="row-span-1 h-64 p-3"delay={0.4}>
             <img
-              src="/back3.png"
+              src="housify.png"
               alt="Landing Page Template"
               className="w-full h-full object-cover rounded-2xl opacity-60 "
             />

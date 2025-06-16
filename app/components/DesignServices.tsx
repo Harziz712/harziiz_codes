@@ -38,9 +38,12 @@ const DesignServices = () => {
           Explore a suite of design services to elevate your brand and<br/> user experience from stunning websites to productive Mobile App Development
           </p>
           </div>
-             <button className="px-6 py-3 sm:text-xs md:text-md rounded-full bg-neutral-800 text-white font-medium hover:bg-neutral-700 transition">
+            <a
+          href="https://wa.me/2348146447551"
+          target="_blank"
+          rel="noopener noreferrer" className="px-6  py-3 h-10 sm:text-xs md:text-md rounded-full bg-neutral-800 text-white font-medium hover:bg-neutral-700 transition">
               Contact Now
-            </button>
+            </a>
         </div>
         </motion.div>
       </div>

@@ -18,7 +18,7 @@ const ProfileCard = () => {
   }
 
   return (
-    <div className="min-h-screen bg-black text-white pb-24 border-b-2 border-b-neutral-600">
+    <div id='profile' className="min-h-screen bg-black text-white pb-24 border-b-2 border-b-neutral-600">
       <motion.div
         initial="hidden"
         whileInView="visible"
@@ -106,10 +106,10 @@ const ProfileCard = () => {
 
                 {/* Socials */}
                 <div className="flex space-x-3">
-                  <SocialIcon icon={Twitter} href="#" delay={0.6} />
-                  <SocialIcon icon={Instagram} href="#" delay={0.7} />
-                  <SocialIcon icon={Linkedin} href="#" delay={0.8} />
-                  <SocialIcon icon={Github} href="#" delay={0.8} />
+                  <SocialIcon icon={Twitter}   href="https://x.com/harziizdevps"               delay={0.6} />
+                  <SocialIcon icon={Instagram} href="https://www.instagram.com/harzzie711/"    delay={0.7} />
+                  <SocialIcon icon={Linkedin}  href="https://www.linkedin.com/in/akanbiazeez/" delay={0.8} />
+                  <SocialIcon icon={Github}    href="https://github.com/harziz712"             delay={0.8} />
                 </div>
 
                 {/* Button */}
@@ -122,7 +122,13 @@ const ProfileCard = () => {
                   viewport={{ once: false }}
                   className="w-full sm:w-auto px-8 py-3 bg-gradient-to-br from-neutral-800 to-neutral-900 text-white rounded-full font-medium border border-neutral-700 hover:text-white hover:bg-neutral-600 cursor-pointer"
                 >
-                  Connect with me
+                          <a
+          href="https://wa.me/2348146447551"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Connect with me
+        </a>
                 </motion.button>
               </motion.div>
             </motion.div>

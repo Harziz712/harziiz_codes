@@ -17,13 +17,13 @@ const Footer = () => {
 
           </div>
           <div className="mt-6 flex gap-6 text-sm text-gray-400">
-            <a href="#">Services</a>
-            <a href="#">Projects</a>
-            <a href="#" className="relative">
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+            <a href="#profile" className="relative">
               Profile
             </a>
-            <a href="#">Reviews</a>
-            <a href="#">Contact</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#contact">Contact</a>
           </div>
           <p className="mt-6 text-xs text-gray-500">© 2025 HarziizCodes</p>
         </div>
@@ -31,10 +31,10 @@ const Footer = () => {
         {/* Right Section */}
         <div className="flex flex-col items-start md:items-end gap-4 text-sm text-gray-400">
           <div className="flex gap-4 text-xl">
-            <a href="#"><FaXTwitter /></a>
-            <a href="#"><FaInstagram /></a>
-            <a href="#"><FaLinkedin /></a>
-            <a href="#"><FaGithub /></a>
+            <a href="https://x.com/harziizdevps"              ><FaXTwitter /></a>
+            <a href="https://www.instagram.com/harzzie711/"   ><FaInstagram /></a>
+            <a href="https://www.linkedin.com/in/akanbiazeez/"><FaLinkedin /></a>
+            <a href="https://github.com/harziz712"            ><FaGithub /></a>
           </div>
           <div className="flex gap-6 mt-4">
             <p>Made with 💻 by Harziiz</p>

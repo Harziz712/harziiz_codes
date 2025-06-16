@@ -59,12 +59,18 @@ Get Quick Answers to your most Presssing Questions          </p>
             transition={{ delay: 0.3, duration: 0.6 }}
           >
          <div className="grid md:grid-cols-2 grid-cols-1 w-full col-span-1  gap-4">
-            <button className="px-4 py-3 sm:text-xs md:text-md lg:text-lg rounded-full bg-white text-black font-medium hover:bg-neutral-200 transition">
+            <a 
+             href='https://harziiz-me.vercel.app/projects' 
+            className="px-4 py-3 sm:text-xs md:text-md lg:text-lg rounded-full bg-white text-black font-medium hover:bg-neutral-200 transition">
               See All Projects
-            </button>
-            <button className="px-4 py-3 sm:text-xs md:text-md lg:text-lg rounded-full bg-neutral-800 text-white font-medium hover:bg-neutral-700 transition">
+            </a>
+            <a 
+         href="https://wa.me/2348146447551"
+          target="_blank"
+          rel="noopener noreferrer"
+            className="px-4 py-3 sm:text-xs md:text-md lg:text-lg rounded-full bg-neutral-800 text-white font-medium hover:bg-neutral-700 transition">
               Contact Now
-            </button>
+            </a>
           </div>
           </motion.div>
 

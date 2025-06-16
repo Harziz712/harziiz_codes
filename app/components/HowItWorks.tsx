@@ -100,12 +100,15 @@ const HowItWorks =() =>{
         </p>
       </div>
       <div className="flex gap-2 mt-2 md:mt-0">
-        <button className="bg-white text-black px-3 py-1.5 rounded-full text-xs font-medium">
+           <a
+          href="https://wa.me/2348146447551"
+          target="_blank"
+          rel="noopener noreferrer" className="bg-white text-black px-3 py-1.5 rounded-full text-xs font-medium">
         Contact Now
-        </button>
-        <button className="bg-neutral-800 px-3 py-1.5 rounded-full text-xs font-medium text-white">
+        </a>
+        <a href='https://harziiz-me.vercel.app/projects'  className="bg-neutral-800 px-3 py-1.5 rounded-full text-xs font-medium text-white">
         See All Projects
-        </button>
+        </a>
       </div>
     </motion.div>
     </section>
