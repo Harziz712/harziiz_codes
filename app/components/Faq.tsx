@@ -60,7 +60,8 @@ Get Quick Answers to your most Presssing Questions          </p>
           >
          <div className="grid md:grid-cols-2 grid-cols-1 w-full col-span-1  gap-4">
             <a 
-             href='https://harziiz-me.vercel.app/projects' 
+               href='https://harziiz-me.vercel.app/projects' target="_blank" rel="noopener noreferrer"
+        title="View Project"
             className="px-4 py-3 sm:text-xs md:text-md lg:text-lg rounded-full bg-white text-black font-medium hover:bg-neutral-200 transition">
               See All Projects
             </a>

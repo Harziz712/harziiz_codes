@@ -21,13 +21,15 @@ export const Card: React.FC<CardProps> = ({ children, className = '', delay = 0 
     >
       {children}
       <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-      <motion.button
+      <motion.a
         className="absolute bottom-4 left-4 flex h-10 w-10 items-center justify-center rounded-full bg-white/90 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300"
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.95 }}
+        href='https://harziiz-me.vercel.app/projects' target="_blank" rel="noopener noreferrer"
+        title="View Project"
       >
         <ArrowUpRight className="h-4 w-4 text-black" />
-      </motion.button>
+      </motion.a>
     </motion.div>
   );
 };

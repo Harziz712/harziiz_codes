@@ -49,7 +49,8 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4">
-            <a href='https://harziiz-me.vercel.app/projects'  className="px-6 py-3 lg:text-lg rounded-full bg-white text-black font-medium hover:bg-neutral-200 transition">
+            <a   href='https://harziiz-me.vercel.app/projects' target="_blank" rel="noopener noreferrer"
+         title="View Project" className="px-6 py-3 lg:text-lg rounded-full bg-white text-black font-medium hover:bg-neutral-200 transition">
               See All Projects
             </a >
               <a

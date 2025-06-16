@@ -106,7 +106,8 @@ const HowItWorks =() =>{
           rel="noopener noreferrer" className="bg-white text-black px-3 py-1.5 rounded-full text-xs font-medium">
         Contact Now
         </a>
-        <a href='https://harziiz-me.vercel.app/projects'  className="bg-neutral-800 px-3 py-1.5 rounded-full text-xs font-medium text-white">
+        <a  href='https://harziiz-me.vercel.app/projects' target="_blank" rel="noopener noreferrer"
+        title="View Project"  className="bg-neutral-800 px-3 py-1.5 rounded-full text-xs font-medium text-white">
         See All Projects
         </a>
       </div>
