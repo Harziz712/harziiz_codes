@@ -17,8 +17,8 @@ const TestimonialCards = () => {
           viewport={{ once: true, amount: 0.4 }}
         >
           <TestimonialCard
-            name="Will Smith"
-            company="Harper education"
+            name="James Gray"
+            company="Airtime Ease"
             rating={5}
             message="The designs exceeded our expectations! Every element felt purposeful, creating a seamless and visually stunning brand identity."
             imageUrl="/profileimg.png"
@@ -33,8 +33,8 @@ const TestimonialCards = () => {
           viewport={{ once: true, amount: 0.4 }}
         >
           <TestimonialCard
-            name="Ada Lovelace"
-            company="TechVerse Inc."
+            name="Jace Darwin"
+            company="GameHub Inc."
             rating={4.9}
             message="Highly collaborative and deeply creative. Our brand is now memorable thanks to the new visuals."
             imageUrl="/profileimg.png"
@@ -49,8 +49,8 @@ const TestimonialCards = () => {
           viewport={{ once: true, amount: 0.4 }}
         >
           <TestimonialCard
-            name="Elon Ray"
-            company="FutureFounders"
+            name="dd3vahmad"
+            company="Acqua"
             rating={5}
             message="Fantastic execution and intuitive design. Exceeded all performance goals we set."
             imageUrl="/profileimg.png"
@@ -65,8 +65,8 @@ const TestimonialCards = () => {
           viewport={{ once: true, amount: 0.4 }}
         >
           <TestimonialCard
-            name="Tina Zhao"
-            company="EduSpark"
+            name="Eiona Smith"
+            company="OJAA"
             rating={4.8}
             message="Loved the attention to detail and the storytelling in the visuals. Highly recommended!"
             imageUrl="/profileimg.png"
