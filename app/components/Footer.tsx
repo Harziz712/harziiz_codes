@@ -16,7 +16,7 @@ const Footer = () => {
                 <StylishBadge className='border border-gray-700 '>Harziiz</StylishBadge>
 
           </div>
-          <div className="mt-6 flex gap-6 text-sm text-gray-400">
+          <div className="mt-6 grid md:grid-cols-1 gap-6 text-sm text-gray-400">
             <a href="#services">Services</a>
             <a href="#projects">Projects</a>
             <a href="#profile" className="relative">
@@ -30,7 +30,7 @@ const Footer = () => {
 
         {/* Right Section */}
         <div className="flex flex-col items-start md:items-end gap-4 text-sm text-gray-400">
-          <div className="flex gap-4 text-xl">
+          <div className=" flex gap-4 text-xl">
             <a href="https://x.com/harziizdevps"              ><FaXTwitter /></a>
             <a href="https://www.instagram.com/harzzie711/"   ><FaInstagram /></a>
             <a href="https://www.linkedin.com/in/akanbiazeez/"><FaLinkedin /></a>
