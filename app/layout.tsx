@@ -5,6 +5,7 @@ import CursorTrail from "./components/ui/CursorTrack";
 import Preloader from "./components/ui/Preloader";
 
 
+
 export const metadata: Metadata = {
   title: "Harziiz Portfolio",
   keywords: [
