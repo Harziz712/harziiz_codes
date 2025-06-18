@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 
 import "./globals.css";
 import CursorTrail from "./components/ui/CursorTrack";
+import Preloader from "./components/ui/Preloader";
 
 
 export const metadata: Metadata = {
@@ -21,6 +22,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body className="font-geist antialiased">
+        <Preloader/>
         <CursorTrail />
         {children}
         </body>
