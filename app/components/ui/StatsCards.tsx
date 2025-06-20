@@ -5,15 +5,15 @@ import React from 'react';
 const stats = [
   {
     value: '100+',
-    label: 'Happy clients',
+    label: 'Happy Clients',
   },
   {
-    value: '$250m',
-    label: 'revenue added',
+    value: '30+',
+    label: 'Web Projects Deployed',
   },
   {
     value: '4.8',
-    label: 'Average Rating',
+    label: 'Average Code Quality Rating',
   },
 ];
 
