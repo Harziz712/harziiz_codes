@@ -2,7 +2,7 @@
 
 import React from 'react'
 import { motion } from 'framer-motion'
-import { Twitter, Instagram, Github, Linkedin } from 'lucide-react'
+import { Twitter, Instagram, Github, Linkedin, Download } from 'lucide-react'
 import { ExperienceItem } from './ui/ExperienceItem'
 import { SocialIcon } from './ui/SocialIcons'
 import { Badge, StylishBadge } from './ui/Badge'
@@ -122,13 +122,16 @@ const ProfileCard = () => {
                   viewport={{ once: false }}
                   className="w-full sm:w-auto px-8 py-3 bg-gradient-to-br from-neutral-800 to-neutral-900 text-white rounded-full font-medium border border-neutral-700 hover:text-white hover:bg-neutral-600 cursor-pointer"
                 >
-                          <a
-          href="https://wa.me/2348146447551"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Connect with me
-        </a>
+                <a
+                  href="/AKANBI_ABDULAZEEZ_KOLAWOLE_CV.pdf"
+                  download="AKANBI_ABDULAZEEZ_KOLAWOLE_CV.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group inline-flex items-center gap-2 "
+                >
+                  <Download className="w-5 h-5" />
+                  Download CV
+                </a>
                 </motion.button>
               </motion.div>
             </motion.div>
