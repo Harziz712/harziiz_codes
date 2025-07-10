@@ -44,7 +44,7 @@ const LetsConnect = () => {
 
           <Card className="row-span-1 p-3" delay={0.7}>
             <img
-              src="/back4.png"
+              src="/zeez.png"
               alt="Creative Agency Template"
               className="w-full h-full object-cover rounded-2xl opacity-60 "
             />

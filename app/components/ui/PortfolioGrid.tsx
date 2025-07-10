@@ -12,7 +12,7 @@ export const PortfolioGrid = () => {
             <div className="grid grid-cols-1 gap-4 md:grid-rows-3 ">
               <Card className="row-span-2 p-3" delay={0.1}>
               <img
-                src="/back1.png"
+                src="/fit.png"
                 alt="Dashboard Template"
                 className="w-full h-full object-cover rounded-2xl opacity-60 "
               />
@@ -38,9 +38,9 @@ export const PortfolioGrid = () => {
 
           <Card className="row-span-2 p-3" delay={0.7}>
             <img
-              src="/back4.png"
+              src="/zeez.png"
               alt="Creative Agency Template"
-              className="w-full h-full object-cover rounded-2xl opacity-60 "
+              className="w-full hover:scale-0.8 h-full object-cover rounded-2xl opacity-60 "
             />
           </Card>
           </div>
