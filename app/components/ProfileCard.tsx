@@ -6,6 +6,7 @@ import { Twitter, Instagram, Github, Linkedin, Download } from 'lucide-react'
 import { ExperienceItem } from './ui/ExperienceItem'
 import { SocialIcon } from './ui/SocialIcons'
 import { Badge, StylishBadge } from './ui/Badge'
+import CircularText from './ui/CircularText'
 
 const ProfileCard = () => {
   const itemVariants = {
@@ -81,9 +82,14 @@ const ProfileCard = () => {
 
               {/* About */}
               <motion.div
+                  variants={itemVariants}
+                custom={0.5}
+                className="flex justify-around w-full"
+              >
+              <motion.div
                 variants={itemVariants}
                 custom={0.5}
-                className="space-y-4"
+                className="space-y-4 w-2/3"
               >
                 <motion.h2
                   initial={{ opacity: 0, x: -20 }}
@@ -132,7 +138,16 @@ const ProfileCard = () => {
                   <Download className="w-5 h-5" />
                   Download CV
                 </a>
+         
                 </motion.button>
+              </motion.div>
+
+                       <CircularText
+                    text="HIRE*ME*NOW*"
+                    onHover="speedUp"
+                    spinDuration={20}
+                    className="custom-class w-1/3"
+                  />
               </motion.div>
             </motion.div>
 
