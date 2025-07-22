@@ -10,7 +10,7 @@ export const PortfolioGrid = () => {
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
             {/* left content */}
             <div className="grid grid-cols-1 gap-4 md:grid-rows-3 ">
-              <Card className="row-span-2 p-3" delay={0.1}>
+              <Card className="row-span-2 p-3" delay={0.1} link="https://zeezgymhub.vercel.app/">
               <img
                 src="/fit.png"
                 alt="Dashboard Template"
@@ -18,7 +18,7 @@ export const PortfolioGrid = () => {
               />
           </Card>
 
-        <Card className="row-span-1 h-64 p-3" delay={0.4}>
+        <Card className="row-span-1 h-64 p-3" delay={0.4} link="https://apple-website-5riki.onrender.com/">
             <img
               src="/apple.png"
               alt="Landing Page Template"
@@ -28,7 +28,7 @@ export const PortfolioGrid = () => {
         </div>
         {/* right content */}
         <div className="grid grid-cols-1 gap-4 md:grid-rows-3 ">
-          <Card className="row-span-1 h-64 p-3"delay={0.4}>
+          <Card className="row-span-1 h-64 p-3"delay={0.4} link="http://housify-cehf.onrender.com/">
             <img
               src="housify.png"
               alt="Landing Page Template"
@@ -36,7 +36,7 @@ export const PortfolioGrid = () => {
             />
           </Card>
 
-          <Card className="row-span-2 p-3" delay={0.7}>
+          <Card className="row-span-2 p-3" delay={0.7} link="https://harziiz-me.vercel.app/">
             <img
               src="/zeez.png"
               alt="Creative Agency Template"

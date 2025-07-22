@@ -3,14 +3,16 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowUpRight } from 'lucide-react';
+import Link from 'next/link';
 
 interface CardProps {
   children?: React.ReactNode;
   className?: string;
   delay?: number;
+  link?:string;
 }
 
-export const Card: React.FC<CardProps> = ({ children, className = '', delay = 0 }) => {
+export const Card: React.FC<CardProps> = ({ children, className = '', delay = 0, link }) => {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -28,7 +30,8 @@ export const Card: React.FC<CardProps> = ({ children, className = '', delay = 0 
         href='https://harziiz-me.vercel.app/projects' target="_blank" rel="noopener noreferrer"
         title="View Project"
       >
-        <ArrowUpRight className="h-4 w-4 text-black" />
+       <Link href={`${link}`} target='_blank'> <ArrowUpRight className="h-4 w-4 text-black" /> </Link>
+
       </motion.a>
     </motion.div>
   );
