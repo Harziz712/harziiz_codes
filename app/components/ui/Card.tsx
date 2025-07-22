@@ -2,8 +2,9 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowUpRight, Laptop, Palette } from 'lucide-react';
+import { ArrowUpRight, Laptop, Palette, PaletteIcon, Puzzle, } from 'lucide-react';
 import Link from 'next/link';
+import { BiBullseye } from 'react-icons/bi';
 
 interface CardProps {
   children?: React.ReactNode;
@@ -70,9 +71,9 @@ export  function ServicesDetails({ title, description, index }: ServiceProps) {
             <h3 className="text-xl font-semibold mb-2 flex items-center gap-2">
               <span>
                 {title.includes("UI/UX") && <Laptop/>}
-                {title.includes("Development") && <Palette/>}
-                {title.includes("Framer") && "🎯"}
-                {title.includes("Website") && "🧩"}
+                {title.includes("Development") && <PaletteIcon/>}
+                {title.includes("Framer") && <BiBullseye/>}
+                {title.includes("Website") && <Puzzle/>}
               </span>
               {title}
             </h3>
