@@ -24,7 +24,7 @@ const services: ServiceItem[] = [
 
 const ServicePricing = () => {
   return (
-    <div className="max-w-3xl mx-auto divide-y divide-[#2a2a2a] text-white px-4">
+    <div className="md:w-5/6 divide-y divide-[#2a2a2a] text-white px-4">
       {services.map((service, idx) => (
         <div key={idx} className="py-6">
           <div className="flex items-center gap-3 flex-wrap">

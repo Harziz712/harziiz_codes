@@ -6,6 +6,7 @@ import {
   ListOrdered,
   Code2,
   Rocket,
+  Handshake,
 } from 'lucide-react';
 import { StylishBadge } from './ui/Badge';
 
@@ -91,13 +92,16 @@ const HowItWorks =() =>{
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.3, duration: 0.6 }}
     >
-      <div className="flex flex-col items-center md:items-start flex-1">
-        <p className="text-white text-center md:text-left font-medium text-base">
-        🤝 I am with you in every step
+      <div className="flex flex-row items-center md:items-start gap-4 flex-1">
+        <Handshake/> 
+       <div className="flex flex-col items-center md:items-start flex-1"> 
+        <p className="text-white text-center md:text-left font-medium  text-base">
+       I am with you in every step
         </p>
         <p className="text-gray-400 text-xs text-center md:text-left mt-1">
         Alongside you at each step for a seamless experience
         </p>
+        </div>
       </div>
       <div className="flex gap-2 mt-2 md:mt-0">
            <a

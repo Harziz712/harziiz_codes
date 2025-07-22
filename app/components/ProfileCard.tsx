@@ -152,7 +152,7 @@ const ProfileCard = () => {
                   I'm Akanbi AbdulAzeez, a dedicated Web Developer & Designer based in the vibrant city of Lagos, Nigeria. I specialize in creative design with seamless technical execution to craft exceptional digital experiences.
                 </p>
                 <div className="flex flex-wrap gap-3">
-                  <Badge delay={0.4}>Web Development</Badge>
+                  <Badge delay={0.4} >Web Development</Badge>
                   <Badge delay={0.5}>Javascript</Badge>
                   <Badge delay={0.6}>Mobile App Development</Badge>
                   <Badge delay={0.7}>UI/UX Design</Badge>

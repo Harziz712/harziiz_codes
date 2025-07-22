@@ -11,7 +11,7 @@ export const Badge = ({ children, delay = 0 }: { children: React.ReactNode; dela
     initial={{ opacity: 0, scale: 0.8 }}
     animate={{ opacity: 1, scale: 1 }}
     transition={{ duration: 0.5, delay }}
-    className="px-4 py-2 bg-neutral-800 border border-neutral-700 rounded-full text-xs text-neutral-300 hover:bg-neutral-700 transition-colors duration-300"
+    className="px-4 py-2 bg-neutral-800 border border-neutral-700 rounded-full text-xs hover:animate-pulse text-neutral-300 hover:bg-neutral-700 transition-colors duration-300"
   >
     {children}
   </motion.span>

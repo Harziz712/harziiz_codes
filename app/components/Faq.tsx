@@ -58,7 +58,7 @@ Get Quick Answers to your most Presssing Questions          </p>
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.6 }}
           >
-         <div className="grid md:grid-cols-2 grid-cols-1 w-full col-span-1  gap-4">
+         <div className="grid md:grid-cols-2 grid-cols-1 md:w-5/6 col-span-1  gap-4">
             <a 
                href='https://harziiz-me.vercel.app/projects' target="_blank" rel="noopener noreferrer"
         title="View Project"
