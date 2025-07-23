@@ -7,6 +7,7 @@ import { ExperienceItem } from './ui/ExperienceItem'
 import { SocialIcon } from './ui/SocialIcons'
 import { Badge, StylishBadge } from './ui/Badge'
 import CircularText from './ui/CircularText'
+import RotatingText from './ui/RotatingText'
 
 const ProfileCard = () => {
   const itemVariants = {
@@ -38,14 +39,26 @@ const ProfileCard = () => {
           <motion.h1
             variants={itemVariants}
             custom={0.2}
-            className="text-4xl sm:text-5xl lg:text-6xl font-light mb-6"
+            className="text-4xl sm:text-5xl lg:text-6xl font-light flex w-full justify-center mb-6"
           >
-            Akanbi AbdulAzeez, <span className="text-neutral-500">Your Developer</span>
+            Akanbi AbdulAzeez,  <span className="text-neutral-500">Your</span>   <RotatingText
+            texts={[' Developer ', 'Designer', 'Automation Gee ', 'Engineer']}
+            mainClassName="px-2 sm:px-2 md:px-3 text-neutral-500 overflow-hidden py-0.5 sm:py-1 md:py-2 justify-center rounded-lg"
+            staggerFrom={"last"}
+            initial={{ y: "100%" }}
+            animate={{ y: 0 }}
+            exit={{ y: "-120%" }}
+            staggerDuration={0.025}
+            splitLevelClassName="overflow-hidden pb-0.5 sm:pb-1 md:pb-1"
+            transition={{ type: "spring", damping: 30, stiffness: 400 }}
+            rotationInterval={2000}
+          /> 
           </motion.h1>
+  
           <motion.p
             variants={itemVariants}
             custom={0.3}
-            className="text-neutral-400 text-lg max-w-2xl mx-auto"
+            className="text-neutral-400 text-lg  max-w-2xl mx-auto"
           >
             Brief initial presentation of myself and my previous experiences.
           </motion.p>
