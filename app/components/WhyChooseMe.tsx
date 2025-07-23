@@ -1,13 +1,14 @@
 import { motion } from 'framer-motion'
 import React from 'react'
 import {  StylishBadge } from './ui/Badge'
-import ComparisonCards from './ui/ComparisonCards'
 import ScrollStack from './ui/ScrollStack'
 
 const WhyChooseMe = () => {
 
   return (
     <section className="bg-black text-white px-4 py-16 md:px-8 lg:px-20 border-b-2 pb-24 border-b-neutral-600 ">
+
+
          <div className="text-center mb-12">
         <motion.div
           initial={{ opacity: 0, y: 10 }}
