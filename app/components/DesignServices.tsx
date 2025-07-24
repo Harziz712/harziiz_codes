@@ -96,18 +96,18 @@ export default DesignServices;
                     <div className="md:col-span-2 lg:col-span-2 xl:col-span-2 space-y-5" >
                    < AnimateCard     
                     className="md:col-span-2 lg:col-span-2 xl:col-span-2 h-40 p-3 rounded-2xl bg-gradient-to-br from-neutral-800 to-neutral-900" >
-                        <ServicesDetails 
-                        title = "Website Design"
-                         description = "Designing breathtaking, user-centric websites that boost engagement, conversions, and growth, perfectly aligned with your brand"
-                         index = {3}
+                        <ServicesDetails
+                            title="Automation (n8n, Zapier, Make.com)"
+                            description="Streamline your workflows and boost productivity by automating repetitive tasks and integrating your favorite tools using platforms like n8n, Zapier, and Make.com."
+                            index={3}
                         />
                     </AnimateCard>
                    <AnimateCard
                     className="relative h-100 md:h-100 p-3 rounded-2xl bg-gradient-to-br from-neutral-800 to-neutral-900 grid grid-rows-3"
                     >
                     <ServicesDetails
-                        title="Framer Design"
-                        description="Bringing ideas to life with interactive, user-centered Framer designs that simplify complexity and elevate user experience"
+                        title="Website Design"
+                        description="Designing breathtaking, user-centric websites that boost engagement, conversions, and growth, perfectly aligned with your brand"
                         index={4}
                     />
                     
