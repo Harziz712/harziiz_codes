@@ -72,8 +72,8 @@ export  function ServicesDetails({ title, description, index }: ServiceProps) {
               <span>
                 {title.includes("UI/UX") && <Laptop/>}
                 {title.includes("Development") && <PaletteIcon/>}
-                {title.includes("Framer") && <BiBullseye/>}
-                {title.includes("Website") && <Puzzle/>}
+                {title.includes("Website") && <BiBullseye/>}
+                {title.includes("Automation") && <Puzzle/>}
               </span>
               {title}
             </h3>
