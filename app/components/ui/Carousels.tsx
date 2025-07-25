@@ -57,6 +57,8 @@ const topRow = [
   "Framer Migration",
   "Webflow Design",
   "Wix Design",
+  "Squarespace Design",
+  "Wordpress Design"
   "n8n",
   "Automation",
   "Ai Agents",
@@ -77,6 +79,9 @@ const bottomRow = [
   "Workflows",
   "AI",
   "API Integration",
+  "Supabase integrations"
+  "Database Management"
+
 ];
 
 // ✅ Animation Factory

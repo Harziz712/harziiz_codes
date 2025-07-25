@@ -159,7 +159,7 @@ const ProfileCard = () => {
                     text="HIRE*ME*NOW*"
                     onHover="speedUp"
                     spinDuration={20}
-                    className="custom-class w-1/3"
+                    className="custom-class  md:w-1/3"
                   />
               </motion.div>
             </motion.div>
@@ -187,6 +187,10 @@ const ProfileCard = () => {
                   <Badge delay={0.8}>Next.js</Badge>
                   <Badge delay={0.9}>React</Badge>
                   <Badge delay={1.0}>Webflow</Badge>
+                  <Badge delay={1.1}>Squarespace</Badge>
+                  <Badge delay={1.2}>Wix</Badge>
+                  <Badge delay={1.3}>Wordpress</Badge>
+                  <Badge delay={1.4}>Framer</Badge>
                 </div>
               </motion.div>
 
