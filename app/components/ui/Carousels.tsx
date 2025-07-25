@@ -58,7 +58,7 @@ const topRow = [
   "Webflow Design",
   "Wix Design",
   "Squarespace Design",
-  "Wordpress Design"
+  "Wordpress Design",
   "n8n",
   "Automation",
   "Ai Agents",
@@ -79,8 +79,8 @@ const bottomRow = [
   "Workflows",
   "AI",
   "API Integration",
-  "Supabase integrations"
-  "Database Management"
+  "Supabase integrations",
+  "Database Management",
 
 ];
 
