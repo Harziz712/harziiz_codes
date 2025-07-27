@@ -39,14 +39,14 @@ const ProfileCard = () => {
           <motion.h1
             variants={itemVariants}
             custom={0.2}
-            className="text-3xl sm:text-xl lg:text-4xl font-light flex-col md:flex w-full justify-center mb-6"
+            className="text-3xl sm:text-4xl md:text-4xl font-light flex-col gap-2 md:flex-row md:flex w-full justify-center mb-6"
           >
             <span>Akanbi AbdulAzeez, </span> 
-            <span>
-              <span className="text-neutral-500">Your</span>   
+            <span className='flex justify-center '>
+            <span className="text-neutral-500"> Your</span>   
             <RotatingText
             texts={[' Developer ', 'Designer', 'Automation Gee ', 'Engineer']}
-            mainClassName="px-2 sm:px-2 md:px-3 text-neutral-500 overflow-hidden py-0.5 sm:py-1 md:py-2 justify-center rounded-lg"
+            mainClassName="px-2 sm:px-2 md:px-3 text-neutral-500 overflow-hidden justify-center rounded-lg"
             staggerFrom={"last"}
             initial={{ y: "100%" }}
             animate={{ y: 0 }}
