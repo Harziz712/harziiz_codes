@@ -68,7 +68,7 @@ export  function ServicesDetails({ title, description, index }: ServiceProps) {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: (index ?? 0) * 0.1 }}
           >
-            <h3 className="text-xl font-semibold mb-2 flex items-center gap-2">
+            <h3 className="text-lg md:text-xl font-semibold mb-2 flex items-center gap-2">
               <span>
                 {title.includes("UI/UX") && <Laptop/>}
                 {title.includes("Development") && <PaletteIcon/>}
@@ -77,7 +77,7 @@ export  function ServicesDetails({ title, description, index }: ServiceProps) {
               </span>
               {title}
             </h3>
-            <p className="text-gray-300 mb-4 text-sm leading-relaxed">
+            <p className="text-gray-300 mb-4 text-xs md:text-sm leading-relaxed">
               {description}
             </p>
           </motion.div>

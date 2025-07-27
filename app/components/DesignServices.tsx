@@ -97,7 +97,7 @@ export default DesignServices;
                    < AnimateCard     
                     className="md:col-span-2 lg:col-span-2 xl:col-span-2 h-40 p-3 rounded-2xl bg-gradient-to-br from-neutral-800 to-neutral-900" >
                         <ServicesDetails
-                            title="Automation (n8n, Zapier, Make.com)"
+                            title="Automation Services"
                             description="Streamline your workflows and boost productivity by automating repetitive tasks and integrating your favorite tools using platforms like n8n, Zapier, and Make.com."
                             index={3}
                         />
