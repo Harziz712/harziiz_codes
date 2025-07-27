@@ -39,9 +39,12 @@ const ProfileCard = () => {
           <motion.h1
             variants={itemVariants}
             custom={0.2}
-            className="text-4xl sm:text-5xl lg:text-6xl font-light flex w-full justify-center mb-6"
+            className="text-3xl sm:text-xl lg:text-4xl font-light flex-col md:flex w-full justify-center mb-6"
           >
-            Akanbi AbdulAzeez,  <span className="text-neutral-500">Your</span>   <RotatingText
+            <span>Akanbi AbdulAzeez, </span> 
+            <span>
+              <span className="text-neutral-500">Your</span>   
+            <RotatingText
             texts={[' Developer ', 'Designer', 'Automation Gee ', 'Engineer']}
             mainClassName="px-2 sm:px-2 md:px-3 text-neutral-500 overflow-hidden py-0.5 sm:py-1 md:py-2 justify-center rounded-lg"
             staggerFrom={"last"}
@@ -52,7 +55,8 @@ const ProfileCard = () => {
             splitLevelClassName="overflow-hidden pb-0.5 sm:pb-1 md:pb-1"
             transition={{ type: "spring", damping: 30, stiffness: 400 }}
             rotationInterval={2000}
-          /> 
+          />
+          </span> 
           </motion.h1>
   
           <motion.p
