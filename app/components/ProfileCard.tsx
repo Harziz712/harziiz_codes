@@ -115,7 +115,7 @@ const ProfileCard = () => {
                   viewport={{ once: false }}
                   className="text-2xl font-medium"
                 >
-                  Hello I am Akanbi AbdulAzeez
+                  Akanbi AbdulAzeez k.
                 </motion.h2>
                 <motion.p
                   initial={{ opacity: 0, x: -20 }}
