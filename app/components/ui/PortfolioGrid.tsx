@@ -18,7 +18,7 @@ export const PortfolioGrid = () => {
               />
           </Card>
 
-        <Card className="row-span-1 h-64 p-3" delay={0.4} link="https://apple-website-5riki.onrender.com/">
+        <Card className="row-span-1 h-64 p-3" delay={0.4} link="https://apple-website-5rki.onrender.com/">
             <img
               src="/apple.png"
               alt="Landing Page Template"
