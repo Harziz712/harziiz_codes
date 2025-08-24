@@ -3,6 +3,8 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { useEffect, useState } from 'react';
 import useSound from 'use-sound';
+import { PreloaderIcons } from './SocialIcons';
+import { Twitter, Linkedin, Github } from 'lucide-react';
 
 const Preloader = () => {
   const [progress, setProgress] = useState(0);
@@ -55,7 +57,26 @@ const Preloader = () => {
             </>
           )}
 
-          {/* Message */}
+
+               <motion.h1
+            className="z-10 text-2xl md:text-4xl font-bold text-center px-4 mb-4"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1.2 }}
+          >
+         Welcome to <span className="text-neutral-400 font-vibes text-3xl md:text-5xl">Harziiz's Space</span> 
+          </motion.h1>
+
+            <motion.div className="flex space-x-3"
+                  initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1.2 }}
+          >
+                  <PreloaderIcons icon={Twitter}   href="https://x.com/harziizdevps"                />
+                  <PreloaderIcons icon={Linkedin}  href="https://www.linkedin.com/in/akanbiazeez/" />
+                  <PreloaderIcons icon={Github}    href="https://github.com/harziz712"            />
+                </motion.div>
+          {/* Message
           <motion.h1
             className="z-10 text-2xl md:text-4xl font-bold text-center px-4 mb-4"
             initial={{ opacity: 0, y: 20 }}
@@ -63,7 +84,9 @@ const Preloader = () => {
             transition={{ duration: 1.2 }}
           >
             Crafting digital experiences just for you...
-          </motion.h1>
+          </motion.h1> */}
+          <div className="h-8" /> {/* Spacer */}
+        
 
           {/* Progress Bar */}
           <div className="w-64 h-2 bg-white/10 rounded-full overflow-hidden z-10  font-vibes">
