@@ -8,6 +8,7 @@ const images = [
   "/slideimg1.png",
   "/slideimg2.png",
   "/slideimg3.png",
+  "/zeez.png",
 ];
 
 export default function InfiniteCarousel() {
