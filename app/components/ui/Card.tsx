@@ -1,42 +1,12 @@
 'use client';
 
-import React from 'react';
-import { motion } from 'framer-motion';
-import { ArrowUpRight, Laptop, Palette, PaletteIcon, Puzzle, } from 'lucide-react';
+import React, { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';8
+import { ArrowUpRight, Laptop, PaletteIcon, Puzzle, } from 'lucide-react';
 import Link from 'next/link';
 import { BiBullseye } from 'react-icons/bi';
+import { Github, Globe } from 'lucide-react';
 
-interface CardProps {
-  children?: React.ReactNode;
-  className?: string;
-  delay?: number;
-  link?:string;
-}
-
-export const Card: React.FC<CardProps> = ({ children, className = '', delay = 0, link }) => {
-  return (
-    <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6, delay }}
-      className={`relative overflow-hidden rounded-2xl bg-gradient-to-br from-neutral-800 to-neutral-900 group cursor-pointer ${className}`}
-      whileHover={{ scale: 1.02 }}
-    >
-      {children}
-      <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-      <motion.button
-        className="absolute bottom-4 left-4 flex h-10 w-10 items-center justify-center rounded-full bg-white/90 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-        whileHover={{ scale: 1.1 }}
-        whileTap={{ scale: 0.95 }}
-        // href='https://harziiz-me.vercel.app/projects' target="_blank" rel="noopener noreferrer"
-        title="View Project"
-      >
-       <Link href={`${link}`} target='_blank'> <ArrowUpRight className="h-4 w-4 text-black" /> </Link>
-
-      </motion.button>
-    </motion.div>
-  );
-};
 
 export const AnimateCard: React.FC<CardProps> = ({ children, className }) => {
     return(
@@ -86,3 +56,100 @@ export  function ServicesDetails({ title, description, index }: ServiceProps) {
   );
 }
 
+
+interface CardProps {
+  children?: React.ReactNode;
+  className?: string;
+  delay?: number;
+  link?: string; // live site link
+  github?: string; // github repo link
+  description?: string;
+}
+
+const contentVariants = {
+  hidden: { opacity: 0, y: 40 },
+  visible: { opacity: 1, y: 0 },
+  exit: { opacity: 0, y: 40 },
+};
+
+export const Card: React.FC<CardProps> = ({
+  children,
+  className = '',
+  delay = 0,
+  link,
+  github,
+  description = '',
+}) => {
+  const [isHovered, setIsHovered] = useState(false);
+8
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6, delay }}
+      className={`relative overflow-hidden rounded-2xl bg-gradient-to-br from-neutral-800 to-neutral-900 group cursor-pointer ${className}`}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
+      {/* Image container with zoom-out on hover */}
+      <motion.div
+        className="w-full h-full"
+        initial={{ scale: 1 }}
+        whileHover={{ scale: 0.95 }}
+        transition={{ duration: 0.4 }}
+      >
+        {children}
+      </motion.div>
+
+      {/* Dark overlay */}
+      <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+        <AnimatePresence>
+          {isHovered && (
+            <motion.div
+              key="overlay-content"
+              variants={contentVariants}
+              initial="hidden"
+              animate="visible"
+              exit="exit"
+              transition={{ duration: 0.4 }}
+              className="flex flex-col items-center text-center p-4"
+            >
+              {/* Typewriter Description */}
+              {description && (
+                <p className="text-white text-sm md:text-base mb-4">
+                  {description}
+                </p>
+              )}
+
+              {/* Buttons */}
+              <div className="flex gap-3 mt-2">
+                {github && (
+                  <Link href={github} target="_blank">
+                    <motion.button
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                      className="px-4 py-2 bg-white/90 text-black rounded-lg text-sm font-medium flex items-center gap-2 shadow"
+                    >
+                      <Github size={16} /> GitHub
+                    </motion.button>
+                  </Link>
+                )}
+                {link && (
+                  <Link href={link} target="_blank">
+                    <motion.button
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                      className="px-4 py-2 bg-purple-500 text-white rounded-lg text-sm font-medium flex items-center gap-2 shadow"
+                    >
+                      <Globe size={16} /> View Site
+                    </motion.button>
+                  </Link>
+                )}
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </div>
+    </motion.div>
+  );
+};
