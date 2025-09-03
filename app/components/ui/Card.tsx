@@ -87,14 +87,14 @@ export const Card: React.FC<CardProps> = ({
   return (
     <div className={`relative ${className}`}>
       {/* 📱 Mobile: Use Dialog */}
-      <div className="md:hidden">
+      <div className="md:hidden ">
         <Dialog>
-          <DialogTrigger asChild>
+          <DialogTrigger asChild className='text-white' >
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay }}
-              className={`relative overflow-hidden rounded-2xl  cursor-pointer `}
+              className={`relative overflow-hidden rounded-2xl  cursor-pointer text-white`}
             >
               <div className="w-full h-full">{children}</div>
             </motion.div>
