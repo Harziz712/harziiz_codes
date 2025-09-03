@@ -5,12 +5,12 @@ export const PortfolioGrid = () => {
   return (
     <div className="z-20 bg-transparent p-4 md:p-8">
       <div className="mx-auto max-w-7xl">
-        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 ">
+        <div className="grid grid-cols-1 md:gap-4 md:grid-cols-2 ">
           {/* left content */} 
           <div className="grid grid-cols-1 gap-4 md:grid-rows-2 ">
             {/* Gym Hub Project */}
             <Card
-              className="row-span-2 p-3 md:h-100 "
+              className="row-span-2 p-3 md:h-100  "
               delay={0.1}
               link="https://zeezgymhub.vercel.app/"
               github="https://github.com/Harziz712/fitmode-demo88"
@@ -25,7 +25,7 @@ export const PortfolioGrid = () => {
 
             {/* Apple Clone Project */}
             <Card
-              className="row-span-1 h-64 p-3 md:-top-10 "
+              className="row-span-1 md:h-64 p-3 md:-top-10   "
               delay={0.4}
               link="https://apple-website-5rki.onrender.com/"
               github="https://github.com/Harziz712/Apple_website"
@@ -40,9 +40,9 @@ export const PortfolioGrid = () => {
           </div>
      
                     {/* right content */} 
-          <div className="grid grid-cols-1 gap-4 md:grid-rows-2  ">
+          <div className="grid grid-cols-1 gap-4 md:grid-rows-2   ">
             <Card
-            className="row-span-1 h-64 p-3 "
+            className="row-span-1 md:h-64 p-3  "
               delay={0.4}
               link="http://housify-cehf.onrender.com/"
               github="https://github.com/Harziz712/housify"

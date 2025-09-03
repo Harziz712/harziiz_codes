@@ -128,7 +128,7 @@ export const Card: React.FC<CardProps> = ({
               )}
               {link && (
                 <Link href={link} target="_blank">
-                  <button className="px-4 py-2 bg-purple-500 text-white rounded-lg text-sm font-medium flex items-center gap-2 shadow">
+                  <button className="px-4 py-2 bg-green-700 text-white rounded-lg text-sm font-medium flex items-center gap-2 shadow">
                     <Globe size={16} /> View Site
                   </button>
                 </Link>
