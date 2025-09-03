@@ -100,7 +100,7 @@ export const Card: React.FC<CardProps> = ({
             </motion.div>
           </DialogTrigger>
 
-          <DialogContent className="max-w-sm rounded-2xl bg-gradient-to-br from-neutral-800 to-neutral-900">
+          <DialogContent className="max-w-sm rounded-2xl bg-gradient-to-br from-neutral-800 to-neutral-900 border-2 border-gray-800">
             <DialogHeader>
               <DialogTitle className="text-lg font-bold text-gray-300 ">Project Details</DialogTitle>
             </DialogHeader>
