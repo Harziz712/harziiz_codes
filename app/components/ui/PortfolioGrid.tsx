@@ -10,7 +10,7 @@ export const PortfolioGrid = () => {
           <div className="grid grid-cols-1 gap-4 md:grid-rows-2 ">
             {/* Gym Hub Project */}
             <Card
-              className="row-span-2 p-3 h-100 "
+              className="row-span-2 p-3 md:h-100 "
               delay={0.1}
               link="https://zeezgymhub.vercel.app/"
               github="https://github.com/Harziz712/fitmode-demo88"
@@ -57,7 +57,7 @@ export const PortfolioGrid = () => {
 
             <Card
               // className="row-span-2 p-3 h-100 md:-top-18 lg:-top-20 xl:-top-10"
-              className="row-span-2 p-3 h-100  md:-top-10"
+              className="row-span-2 p-3 md:h-100  md:-top-10"
               delay={0.7}
               link="https://harziiz-me.vercel.app/"
               github="https://github.com/Harziz712/HarziizME"

@@ -94,15 +94,15 @@ export const Card: React.FC<CardProps> = ({
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay }}
-              className={`relative overflow-hidden rounded-2xl bg-gradient-to-br from-neutral-800 to-neutral-900 cursor-pointer `}
+              className={`relative overflow-hidden rounded-2xl  cursor-pointer `}
             >
               <div className="w-full h-full">{children}</div>
             </motion.div>
           </DialogTrigger>
 
-          <DialogContent className="max-w-sm rounded-2xl">
+          <DialogContent className="max-w-sm rounded-2xl bg-gradient-to-br from-neutral-800 to-neutral-900">
             <DialogHeader>
-              <DialogTitle className="text-lg font-bold">Project Details</DialogTitle>
+              <DialogTitle className="text-lg font-bold text-gray-300 ">Project Details</DialogTitle>
             </DialogHeader>
 
             {/* Image */}
@@ -112,7 +112,7 @@ export const Card: React.FC<CardProps> = ({
 
             {/* Description */}
             {description && (
-              <p className="text-sm text-gray-600 dark:text-gray-300 mb-4">
+              <p className="text-sm text-gray-300 mb-4">
                 {description}
               </p>
             )}
