@@ -57,12 +57,14 @@ export  function ServicesDetails({ title, description, index }: ServiceProps) {
 }
 
 
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/app/components/ui/dialog";
+
 interface CardProps {
   children?: React.ReactNode;
   className?: string;
   delay?: number;
-  link?: string; // live site link
-  github?: string; // github repo link
+  link?: string;
+  github?: string;
   description?: string;
 }
 
@@ -74,82 +76,134 @@ const contentVariants = {
 
 export const Card: React.FC<CardProps> = ({
   children,
-  className = '',
+  className = "",
   delay = 0,
   link,
   github,
-  description = '',
+  description = "",
 }) => {
   const [isHovered, setIsHovered] = useState(false);
-8
+
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6, delay }}
-      className={`relative overflow-hidden rounded-2xl bg-gradient-to-br from-neutral-800 to-neutral-900 group cursor-pointer ${className}`}
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
-    >
-      {/* Image container with zoom-out on hover */}
-      <motion.div
-        className="w-full h-full"
-        initial={{ scale: 1 }}
-        whileHover={{ scale: 0.95 }}
-        transition={{ duration: 0.4 }}
-      >
-        {children}
-      </motion.div>
-
-      {/* Dark overlay */}
-      <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-        <AnimatePresence>
-          {isHovered && (
+    <div className={`relative ${className}`}>
+      {/* 📱 Mobile: Use Dialog */}
+      <div className="md:hidden">
+        <Dialog>
+          <DialogTrigger asChild>
             <motion.div
-              key="overlay-content"
-              variants={contentVariants}
-              initial="hidden"
-              animate="visible"
-              exit="exit"
-              transition={{ duration: 0.4 }}
-              className="flex flex-col items-center text-center p-4"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay }}
+              className={`relative overflow-hidden rounded-2xl bg-gradient-to-br from-neutral-800 to-neutral-900 cursor-pointer `}
             >
-              {/* Typewriter Description */}
-              {description && (
-                <p className="text-white text-sm md:text-base mb-4">
-                  {description}
-                </p>
-              )}
-
-              {/* Buttons */}
-              <div className="flex gap-3 mt-2">
-                {github && (
-                  <Link href={github} target="_blank">
-                    <motion.button
-                      whileHover={{ scale: 1.05 }}
-                      whileTap={{ scale: 0.95 }}
-                      className="px-4 py-2 bg-white/90 text-black rounded-lg text-sm font-medium flex items-center gap-2 shadow"
-                    >
-                      <Github size={16} /> GitHub
-                    </motion.button>
-                  </Link>
-                )}
-                {link && (
-                  <Link href={link} target="_blank">
-                    <motion.button
-                      whileHover={{ scale: 1.05 }}
-                      whileTap={{ scale: 0.95 }}
-                      className="px-4 py-2 bg-purple-500 text-white rounded-lg text-sm font-medium flex items-center gap-2 shadow"
-                    >
-                      <Globe size={16} /> View Site
-                    </motion.button>
-                  </Link>
-                )}
-              </div>
+              <div className="w-full h-full">{children}</div>
             </motion.div>
-          )}
-        </AnimatePresence>
+          </DialogTrigger>
+
+          <DialogContent className="max-w-sm rounded-2xl">
+            <DialogHeader>
+              <DialogTitle className="text-lg font-bold">Project Details</DialogTitle>
+            </DialogHeader>
+
+            {/* Image */}
+            <div className="rounded-xl overflow-hidden mb-4">
+              {children}
+            </div>
+
+            {/* Description */}
+            {description && (
+              <p className="text-sm text-gray-600 dark:text-gray-300 mb-4">
+                {description}
+              </p>
+            )}
+
+            {/* Buttons */}
+            <div className="flex gap-3">
+              {github && (
+                <Link href={github} target="_blank">
+                  <button className="px-4 py-2 bg-white/90 text-black rounded-lg text-sm font-medium flex items-center gap-2 shadow">
+                    <Github size={16} /> GitHub
+                  </button>
+                </Link>
+              )}
+              {link && (
+                <Link href={link} target="_blank">
+                  <button className="px-4 py-2 bg-purple-500 text-white rounded-lg text-sm font-medium flex items-center gap-2 shadow">
+                    <Globe size={16} /> View Site
+                  </button>
+                </Link>
+              )}
+            </div>
+          </DialogContent>
+        </Dialog>
       </div>
-    </motion.div>
+
+      {/* 💻 Desktop: Hover Overlay */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay }}
+        className={`hidden md:block relative overflow-hidden rounded-2xl bg-gradient-to-br from-neutral-800 to-neutral-900 group cursor-pointer h-auto ${className}`}
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+      >
+        {/* Image */}
+        <motion.div
+          className={`w-full h-full ${className}`}
+          initial={{ scale: 1 }}
+          whileHover={{ scale: 0.95 }}
+          transition={{ duration: 0.4 }}
+        >
+          {children}
+        </motion.div>
+
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+          <AnimatePresence>
+            {isHovered && (
+              <motion.div
+                key="overlay-content"
+                variants={contentVariants}
+                initial="hidden"
+                animate="visible"
+                exit="exit"
+                transition={{ duration: 0.4 }}
+                className="flex flex-col items-center text-center p-4"
+              >
+                {description && (
+                  <p className="text-white text-sm md:text-base mb-4">
+                    {description}
+                  </p>
+                )}
+                <div className="flex gap-3 mt-2">
+                  {github && (
+                    <Link href={github} target="_blank">
+                      <motion.button
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                        className="px-4 py-2 bg-white/90 text-black rounded-lg text-sm font-medium flex items-center gap-2 shadow"
+                      >
+                        <Github size={16} /> GitHub
+                      </motion.button>
+                    </Link>
+                  )}
+                  {link && (
+                    <Link href={link} target="_blank">
+                      <motion.button
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                        className="px-4 py-2 bg-purple-500 text-white rounded-lg text-sm font-medium flex items-center gap-2 shadow"
+                      >
+                        <Globe size={16} /> View Site
+                      </motion.button>
+                    </Link>
+                  )}
+                </div>
+              </motion.div>
+            )}
+          </AnimatePresence>
+        </div>
+      </motion.div>
+    </div>
   );
 };

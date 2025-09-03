@@ -10,7 +10,7 @@ import CometOverlay from './ui/CometOverlay';
 
 const Hero = () => {
   return (
-    <section id="home" className="relative flex flex-col items-center justify-start px-4 md:px-6 pt-40 pb-20 min-h-[100vh] md:min-h-[140vh] lg:min-h-[200vh] overflow-hidden border-b-2 border-b-neutral-600">
+    <section id="home" className="relative flex flex-col items-center justify-start px-4 md:px-6 pt-40 pb-20 min-h-[100vh] overflow-hidden border-b-2 border-b-neutral-600">
       {/* Background Video */}
       <video
         autoPlay
@@ -72,8 +72,10 @@ const Hero = () => {
       </motion.div>
 
       {/* Portfolio Section (Full Width) */}
-      <PortfolioGrid />
-
+      {/* <div className="w-full ">
+         <PortfolioGrid />
+      </div> */}
+ <PortfolioGrid />
       {/* Scroll Down Button */}
       <motion.button
         className="absolute bottom-10 flex h-10 w-10 items-center justify-center rounded-full backdrop-blur-sm z-30"

@@ -5,12 +5,12 @@ export const PortfolioGrid = () => {
   return (
     <div className="z-20 bg-transparent p-4 md:p-8">
       <div className="mx-auto max-w-7xl">
-        <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-          {/* left content */}
-          <div className="grid grid-cols-1 gap-4 md:grid-rows-3">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 ">
+          {/* left content */} 
+          <div className="grid grid-cols-1 gap-4 md:grid-rows-2 ">
             {/* Gym Hub Project */}
             <Card
-              className="row-span-2 p-3"
+              className="row-span-2 p-3 h-100 "
               delay={0.1}
               link="https://zeezgymhub.vercel.app/"
               github="https://github.com/Harziz712/fitmode-demo88"
@@ -19,13 +19,13 @@ export const PortfolioGrid = () => {
               <img
                 src="/fit.png"
                 alt="Dashboard Template"
-                className="w-full h-full object-cover rounded-2xl opacity-60"
+                className="w-full h-full object-cover rounded-2xl opacity-60 md:h-100"
               />
             </Card>
 
             {/* Apple Clone Project */}
             <Card
-              className="row-span-1 h-64 p-3"
+              className="row-span-1 h-64 p-3 md:-top-10 "
               delay={0.4}
               link="https://apple-website-5rki.onrender.com/"
               github="https://github.com/Harziz712/Apple_website"
@@ -34,16 +34,15 @@ export const PortfolioGrid = () => {
               <img
                 src="/apple.png"
                 alt="Landing Page Template"
-                className="w-full h-full object-cover rounded-2xl opacity-60"
+                className="w-full h-full object-cover rounded-2xl opacity-60 md:h-64"
               />
             </Card>
           </div>
-
-          {/* right content */}
-          <div className="grid grid-cols-1 gap-4 md:grid-rows-3">
-            {/* Housify Project */}
+     
+                    {/* right content */} 
+          <div className="grid grid-cols-1 gap-4 md:grid-rows-2  ">
             <Card
-              className="row-span-1 h-64 p-3"
+            className="row-span-1 h-64 p-3 "
               delay={0.4}
               link="http://housify-cehf.onrender.com/"
               github="https://github.com/Harziz712/housify"
@@ -52,13 +51,13 @@ export const PortfolioGrid = () => {
               <img
                 src="housify.png"
                 alt="Landing Page Template"
-                className="w-full h-full object-cover rounded-2xl opacity-60"
+             className="w-full h-full object-cover rounded-2xl opacity-60 md:h-64"
               />
             </Card>
 
-            {/* Personal Portfolio */}
             <Card
-              className="row-span-2 p-3"
+              // className="row-span-2 p-3 h-100 md:-top-18 lg:-top-20 xl:-top-10"
+              className="row-span-2 p-3 h-100  md:-top-10"
               delay={0.7}
               link="https://harziiz-me.vercel.app/"
               github="https://github.com/Harziz712/HarziizME"
@@ -67,10 +66,11 @@ export const PortfolioGrid = () => {
               <img
                 src="/zeez.png"
                 alt="Creative Agency Template"
-                className="w-full h-full object-cover rounded-2xl opacity-60"
+                className="w-full h-full object-cover rounded-2xl opacity-60 md:h-100"
               />
             </Card>
-          </div>
+          </div> 
+            
         </div>
       </div>
     </div>
