@@ -24,7 +24,7 @@ export const Navbar = () => {
 
         <div className="hidden md:flex">
           <button className="rounded-full border border-white text-white px-5 py-2 text-sm flex items-center gap-2 hover:bg-white hover:text-black transition">
-           <span className="animate-pulse"> ✨ </span>Get for Free
+           <span className="animate-pulse"> ✨ </span>Hire me Now!!! 
           </button>
         </div>
 
