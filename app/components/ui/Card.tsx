@@ -1,63 +1,66 @@
-'use client';
+"use client";
 
-import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';8
-import { ArrowUpRight, Laptop, PaletteIcon, Puzzle, } from 'lucide-react';
-import Link from 'next/link';
-import { BiBullseye } from 'react-icons/bi';
-import { Github, Globe } from 'lucide-react';
-
+import React, { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+8;
+import { Cloud, PaletteIcon, Puzzle } from "lucide-react";
+import Link from "next/link";
+import { BiBullseye } from "react-icons/bi";
+import { Github, Globe } from "lucide-react";
 
 export const AnimateCard: React.FC<CardProps> = ({ children, className }) => {
-    return(
-        <motion.div     
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.3, duration: 0.6 }} 
-        className={`${className}`}
-        >
-
-        {children}
-
-      </motion.div>
-    )
-}
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ delay: 0.3, duration: 0.6 }}
+      className={`${className}`}
+    >
+      {children}
+    </motion.div>
+  );
+};
 
 interface ServiceProps {
-  title: string;        
-    description: string;
-    index?: number;
+  title: string;
+  description: string;
+  index?: number;
 }
-export  function ServicesDetails({ title, description, index }: ServiceProps) {
+export function ServicesDetails({ title, description, index }: ServiceProps) {
   return (
     <section className=" row-span-1 p-4">
       <div className="w-full">
-          <motion.div
-            key={index}
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: (index ?? 0) * 0.1 }}
-          >
-            <h3 className="text-lg md:text-xl font-semibold mb-2 flex items-center gap-2">
-              <span>
-                {title.includes("UI/UX") && <Laptop/>}
-                {title.includes("Development") && <PaletteIcon/>}
-                {title.includes("Website") && <BiBullseye/>}
-                {title.includes("Automation") && <Puzzle/>}
-              </span>
-              {title}
-            </h3>
-            <p className="text-gray-300 mb-4 text-xs md:text-sm leading-relaxed">
-              {description}
-            </p>
-          </motion.div>
+        <motion.div
+          key={index}
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: (index ?? 0) * 0.1 }}
+        >
+          <h3 className="text-lg md:text-xl font-semibold mb-2 flex items-center gap-2">
+            <span>
+              {title.includes("DevOps") && <Cloud />}
+              {title.includes("Development") && <PaletteIcon />}
+              {title.includes("Website") && <BiBullseye />}
+              {title.includes("Automation") && <Puzzle />}
+            </span>
+            {title}
+          </h3>
+          <p className="text-gray-300 mb-4 text-xs md:text-sm leading-relaxed">
+            {description}
+          </p>
+        </motion.div>
       </div>
     </section>
   );
 }
 
-
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/app/components/ui/dialog";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/app/components/ui/dialog";
 
 interface CardProps {
   children?: React.ReactNode;
@@ -89,7 +92,7 @@ export const Card: React.FC<CardProps> = ({
       {/* 📱 Mobile: Use Dialog */}
       <div className="md:hidden ">
         <Dialog>
-          <DialogTrigger asChild className='text-white' >
+          <DialogTrigger asChild className="text-white">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -102,19 +105,17 @@ export const Card: React.FC<CardProps> = ({
 
           <DialogContent className="max-w-sm rounded-2xl bg-gradient-to-br from-neutral-800 to-neutral-900 border-2 border-gray-800">
             <DialogHeader>
-              <DialogTitle className="text-lg font-bold text-gray-300 ">Project Details</DialogTitle>
+              <DialogTitle className="text-lg font-bold text-gray-300 ">
+                Project Details
+              </DialogTitle>
             </DialogHeader>
 
             {/* Image */}
-            <div className="rounded-xl overflow-hidden mb-4">
-              {children}
-            </div>
+            <div className="rounded-xl overflow-hidden mb-4">{children}</div>
 
             {/* Description */}
             {description && (
-              <p className="text-sm text-gray-300 mb-4">
-                {description}
-              </p>
+              <p className="text-sm text-gray-300 mb-4">{description}</p>
             )}
 
             {/* Buttons */}

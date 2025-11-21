@@ -1,16 +1,18 @@
-'use client';
+"use client";
 
-import { motion } from 'framer-motion';
-import { ArrowDown } from 'lucide-react';
-import { TestimonialCard, testimonials } from './ui/TestimonialCard';
-import {PortfolioGrid} from './ui/PortfolioGrid';
-import { Arrow} from './ui/Badge'
-import CometOverlay from './ui/CometOverlay';
-
+import { motion } from "framer-motion";
+import { ArrowDown } from "lucide-react";
+import { TestimonialCard, testimonials } from "./ui/TestimonialCard";
+import { PortfolioGrid } from "./ui/PortfolioGrid";
+import { Arrow } from "./ui/Badge";
+import CometOverlay from "./ui/CometOverlay";
 
 const Hero = () => {
   return (
-    <section id="home" className="relative flex flex-col items-center justify-start px-4 md:px-6 pt-40 pb-20 min-h-[100vh] overflow-hidden border-b-2 border-b-neutral-600">
+    <section
+      id="home"
+      className="relative flex flex-col items-center justify-start px-4 md:px-6 pt-40 pb-20 min-h-[100vh] overflow-hidden border-b-2 border-b-neutral-600"
+    >
       {/* Background Video */}
       <video
         autoPlay
@@ -36,38 +38,55 @@ const Hero = () => {
         {/* Left Content */}
         <div className="flex flex-col gap-4 md:gap-6  lg:col-span-2">
           <span className="inline-flex items-center gap-2 text-sm sm:text-md font-medium bg-neutral-900 border-2 border-gray-800 rounded-full px-4 py-2 w-fit">
-            <span className="w-2 h-2 rounded-full bg-white animate-ping" /> Web Developer & Designer
+            <span className="w-2 h-2 rounded-full bg-white animate-ping" /> Web
+            Developer & Engineer
           </span>
 
           <h1 className="text-4xl sm:text-4xl font-semibold leading-tight flex items-center ">
-            Akanbi <span className="text-neutral-400 ml-4">AbdulAzeez</span>{' '}
-          <Arrow/>
+            Akanbi <span className="text-neutral-400 ml-4">AbdulAzeez</span>{" "}
+            <Arrow />
           </h1>
 
           <p className="text-neutral-300 text-base sm:text-md">
-            I’m a versatile designer specializing in graphic, web, and product design to help grow your business. Let’s build something great!
+            I’m a versatile software engineer specializing in React Native,
+            modern frontend development, DevOps (AWS), and AI-driven solutions —
+            focused on building fast, scalable, and intelligent products that
+            help your business grow.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4">
-            <a   href='https://harziiz-me.vercel.app/projects' target="_blank" rel="noopener noreferrer"
-         title="View Project" className="px-6 py-3 lg:text-lg rounded-full bg-white text-black font-medium hover:bg-neutral-200 transition">
+            <a
+              href="https://harziiz-me.vercel.app/projects"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="View Project"
+              className="px-6 py-3 lg:text-lg rounded-full bg-white text-black font-medium hover:bg-neutral-200 transition"
+            >
               See All Projects
-            </a >
-              <a
-          href="https://wa.me/2348146447551"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="px-6 py-3 lg:text-lg rounded-full bg-neutral-800 text-white font-medium hover:bg-neutral-700 transition"
-        >
-          Contact Now
-        </a>
+            </a>
+            <a
+              href="https://wa.me/2348146447551"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-3 lg:text-lg rounded-full bg-neutral-800 text-white font-medium hover:bg-neutral-700 transition"
+            >
+              Contact Now
+            </a>
           </div>
         </div>
 
         {/* Testimonial Cards */}
         <div className="relative flex flex-col md:pr-20 gap-6 items-center lg:items-end justify-center">
-          <TestimonialCard animate={{ y: [0, -10, 0] }} {...testimonials[0]} className="rotate-[-6deg] -translate-x-0 lg:-translate-x-28" />
-          <TestimonialCard animate={{ y: [0, 10, 0] }} {...testimonials[1]} className="rotate-[6deg] translate-x-0 lg:translate-x-20 lg:ml-12" />
+          <TestimonialCard
+            animate={{ y: [0, -10, 0] }}
+            {...testimonials[0]}
+            className="rotate-[-6deg] -translate-x-0 lg:-translate-x-28"
+          />
+          <TestimonialCard
+            animate={{ y: [0, 10, 0] }}
+            {...testimonials[1]}
+            className="rotate-[6deg] translate-x-0 lg:translate-x-20 lg:ml-12"
+          />
         </div>
       </motion.div>
 
@@ -75,7 +94,7 @@ const Hero = () => {
       {/* <div className="w-full ">
          <PortfolioGrid />
       </div> */}
- <PortfolioGrid />
+      <PortfolioGrid />
       {/* Scroll Down Button */}
       <motion.button
         className="absolute bottom-10 flex h-10 w-10 items-center justify-center rounded-full backdrop-blur-sm z-30"
